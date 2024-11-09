@@ -1993,9 +1993,6 @@ body {
 .mb-9 {
   margin-bottom: 2.25rem;
 }
-.mb-\[18px\] {
-  margin-bottom: 18px;
-}
 .mb-\[26px\] {
   margin-bottom: 26px;
 }
@@ -2319,6 +2316,10 @@ body {
   --tw-border-opacity: 1;
   border-color: rgb(164 164 164 / var(--tw-border-opacity));
 }
+.border-accent {
+  --tw-border-opacity: 1;
+  border-color: rgb(155 6 2 / var(--tw-border-opacity));
+}
 .border-black {
   --tw-border-opacity: 1;
   border-color: rgb(0 0 0 / var(--tw-border-opacity));
@@ -2522,9 +2523,6 @@ body {
 .text-5xl {
   font-size: 3rem;
   line-height: 1;
-}
-.text-\[11px\] {
-  font-size: 11px;
 }
 .text-\[140px\] {
   font-size: 140px;

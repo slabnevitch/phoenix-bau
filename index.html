@@ -249,7 +249,7 @@
               </label>
               <label class="relative mb-10 xl:mb-5">
                 <input autocomplete="off" type="text" name="" required placeholder="" class="peer h-[135px] block w-full mb-10 px-[50px] text-[40px] text-[#2c2c2c] rounded-[40px] border border-black bg-graybg placeholder-[#2c2c2c] focus:outline-none invalid:outline-none focus:bg-white focus:border-accent xl:h-[50px] xl:text-[18px] xl:rounded-3xl xl:mb-5 xl:px-[20px]">
-                <div class="absolute left-[25px] top-1/2 -translate-y-1/2 pointer-events-none text-[40px] text-[#2c2c2c] xl:text-[18px] peer-focus:hidden peer-valid:hidden">Введите номер телефона<span class="text-accent">*</span></div>
+                <div class="absolute border border-accent w-full left-[25px] top-1/2 -translate-y-1/2 pointer-events-none text-[40px] text-[#2c2c2c] xl:text-[18px] peer-focus:hidden peer-valid:hidden">Введите номер телефона<span class="text-accent">*</span></div>
               </label>
               <textarea name="" placeholder="Сообщение" class="h-[360px] py-8 mb-10 block w-full px-[50px] text-[40px] text-[#2c2c2c] rounded-[40px] border border-black bg-graybg placeholder-[#2c2c2c] focus:outline-none invalid:outline-none focus:bg-white focus:border-accent xl:h-[100px] xl:text-[18px] xl:rounded-3xl xl:mb-5 xl:py-2 xl:px-[20px]"></textarea>
               <button type="submit" class="block h-[133px] w-full bg-accent text-[52.24px] font-bold text-white text-center rounded-[40px] xl:text-[20px] xl:h-[50px] transition-colors hover:bg-[#bb2419] active:bg-[#bb2419]">Отправить</button>
@@ -312,19 +312,13 @@
         </div>
         <div class="bg-[#dddddc]">
           <div class="mx-auto max-w-cont px-[30px] py-10 xs:pt-2 xs:pb-5">
-            <nav class="justify-center mb-[18px] hidden xs:flex">
-              <ul>
-                <li class="text-center"><a href="#" data-vbtype="" class="font-medium text-[11px] uppercase">О НАС</a></li>
-                <li class="text-center"><a href="#" data-vbtype="" class="font-medium text-[11px] uppercase">все проекты</a></li>
-                <li class="text-center"><a href="#" data-vbtype="" class="font-medium text-[11px] uppercase">услуги</a></li>
-                <li class="text-center"><a href="#callback-modal" data-vbtype="inline" class="callback font-medium text-[11px] uppercase">заказать звонок</a></li>
-                <li class="text-center"><a href="#" data-vbtype="" class="font-medium text-[11px] uppercase">контакты</a></li>
-              </ul>
-            </nav>
-            <div class="mb-6 text-[27px] font-medium xs:text-[12px] xs:leading-[15px] xs:text-center xs:mb-4">&copy; 
+            <div class="mb-6 text-[27px] font-medium xs:text-[12px] xs:leading-[15px] xs:text-center xs:mb-4 xs:hidden">&copy; 
               <spam class="uppercase">ООО «ФЕНИСК БАУ». Все права защищены правобладателем.</spam>
             </div>
-            <p class="max-w-[810px] text-[20px] leading-[20px] font-medium xs:text-[10px] xs:leading-[12.5px] xs:text-center">Вся информация, включая фото, видео, графические изображения, тексты, ссылки и иное является собственностью ООО «ФЕНИСК БАУ». Любые копирования контента без указания на правообладателя не допускаются.   </p>
+            <div class="hidden text-[27px] font-medium xs:text-[12px] xs:leading-[15px] xs:text-center xs:block">&copy; 
+              <spam class="uppercase">ООО «ФЕНИСК БАУ». ИНН 9701295937 / 2024 г.</spam>
+            </div>
+            <p class="max-w-[810px] text-[20px] leading-[20px] font-medium xs:text-[10px] xs:leading-[12.5px] xs:text-center xs:hidden">Вся информация, включая фото, видео, графические изображения, тексты, ссылки и иное является собственностью ООО «ФЕНИСК БАУ». Любые копирования контента без указания на правообладателя не допускаются.   </p>
           </div>
         </div>
       </footer>
