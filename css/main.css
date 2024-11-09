@@ -2341,23 +2341,23 @@ body {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
-.bg-\[url\(\'\/img\/btn-bg\.png\'\)\] {
-  background-image: url('/img/btn-bg.png');
+.bg-\[url\(\'\.\.\/img\/btn-bg\.png\'\)\] {
+  background-image: url('../img/btn-bg.png');
 }
-.bg-\[url\(\'\/img\/footer-bg\.jpg\'\)\] {
-  background-image: url('/img/footer-bg.jpg');
+.bg-\[url\(\'\.\.\/img\/footer-bg\.jpg\'\)\] {
+  background-image: url('../img/footer-bg.jpg');
 }
-.bg-\[url\(\'\/img\/header-bg\.jpg\'\)\] {
-  background-image: url('/img/header-bg.jpg');
+.bg-\[url\(\'\.\.\/img\/header-bg\.jpg\'\)\] {
+  background-image: url('../img/header-bg.jpg');
+}
+.bg-\[url\(\'\.\.\/img\/icons\/tg\.png\'\)\] {
+  background-image: url('../img/icons/tg.png');
+}
+.bg-\[url\(\'\.\.\/img\/icons\/whatsapp\.png\'\)\] {
+  background-image: url('../img/icons/whatsapp.png');
 }
 .bg-\[url\(\'\/img\/icons\/modal-close\.png\'\)\] {
   background-image: url('/img/icons/modal-close.png');
-}
-.bg-\[url\(\'\/img\/icons\/tg\.png\'\)\] {
-  background-image: url('/img/icons/tg.png');
-}
-.bg-\[url\(\'\/img\/icons\/whatsapp\.png\'\)\] {
-  background-image: url('/img/icons/whatsapp.png');
 }
 .bg-contain {
   background-size: contain;
@@ -2911,8 +2911,8 @@ body {
   background-color: rgb(155 6 2 / var(--tw-bg-opacity));
 }
 
-.hover\:bg-\[url\(\'\/img\/btn-bg-hover\.png\'\)\]:hover {
-  background-image: url('/img/btn-bg-hover.png');
+.hover\:bg-\[url\(\'\.\.\/img\/btn-bg-hover\.png\'\)\]:hover {
+  background-image: url('../img/btn-bg-hover.png');
 }
 
 .hover\:text-accent:hover {
@@ -3252,17 +3252,17 @@ body {
     --tw-bg-opacity: 1;
     background-color: rgb(222 222 221 / var(--tw-bg-opacity));
   }
-  .md\:bg-\[url\(\'\/img\/footer-bg-mob\.jpg\'\)\] {
-    background-image: url('/img/footer-bg-mob.jpg');
+  .md\:bg-\[url\(\'\.\.\/img\/footer-bg-mob\.jpg\'\)\] {
+    background-image: url('../img/footer-bg-mob.jpg');
   }
-  .md\:bg-\[url\(\'\/img\/header-bg-mob\.jpg\'\)\] {
-    background-image: url('/img/header-bg-mob.jpg');
+  .md\:bg-\[url\(\'\.\.\/img\/header-bg-mob\.jpg\'\)\] {
+    background-image: url('../img/header-bg-mob.jpg');
   }
-  .md\:bg-\[url\(\'\/img\/icons\/tg-mob\.png\'\)\] {
-    background-image: url('/img/icons/tg-mob.png');
+  .md\:bg-\[url\(\'\.\.\/img\/icons\/tg-mob\.png\'\)\] {
+    background-image: url('../img/icons/tg-mob.png');
   }
-  .md\:bg-\[url\(\'\/img\/icons\/whatsapp-mob\.png\'\)\] {
-    background-image: url('/img/icons/whatsapp-mob.png');
+  .md\:bg-\[url\(\'\.\.\/img\/icons\/whatsapp-mob\.png\'\)\] {
+    background-image: url('../img/icons/whatsapp-mob.png');
   }
   .md\:px-\[30px\] {
     padding-left: 30px;
