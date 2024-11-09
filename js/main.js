@@ -209,13 +209,21 @@ import ScrollTrigger from '~/app/libs-vanilla/scrollTrigger/ScrollTrigger.js';
 
 document.addEventListener('DOMContentLoaded', () => {
 	// mob. menu close/open
-	const burger = document.getElementById('burger');
+	if(document.getElementById('burger') !== null){
+		const burger = document.getElementById('burger');
 
-	burger.addEventListener('click', (e) => {
-		burger.classList.toggle('on');
-		document.documentElement.classList.toggle('menu-opened');
-		document.documentElement.classList.toggle('lock');
-	});
+		burger.addEventListener('click', (e) => {
+			burger.classList.toggle('on');
+			document.documentElement.classList.toggle('menu-opened');
+			document.documentElement.classList.toggle('lock');
+		});	
+	}
+
+	function mobMenuClose() {
+		burger.classList.remove('on');
+		document.documentElement.classList.remove('menu-opened');
+		document.documentElement.classList.remove('lock');
+	}
 	// END mob. menu close/open
 
 	// usage: http://ganlanyuan.github.io/tiny-slider/#usage
@@ -284,62 +292,86 @@ document.addEventListener('DOMContentLoaded', () => {
 	}
 
 	// VenoBox modal
-	var serviceGallery = new VenoBox({
-		selector: '.serveces-modal',
-		spinner: 'rotating-plane',
-		maxWidth: '44.53%',
-		onPreOpen: function(obj){
-			document.querySelector('#wrapper-for-scroll-fix').classList.add('modal-open');
-		},
-		onPostOpen: function(obj, gallIndex, thenext, theprev){
+	if(document.querySelector('.serveces-modal') !== null){
+		var serviceGallery = new VenoBox({
+			selector: '.serveces-modal',
+			spinner: 'rotating-plane',
+			// maxWidth: '44.53%',
+			onPreOpen: function(obj){
+				document.querySelector('#wrapper-for-scroll-fix').classList.add('modal-open');
+			},
+			onPostOpen: function(obj, gallIndex, thenext, theprev){
 
-		},
-		onPreClose: function(obj, gallIndex, thenext, theprev){
-			document.querySelector('#wrapper-for-scroll-fix').classList.remove('modal-open');
-		}
-	});
-
-	const callbackBox = new VenoBox({
-		selector: '.callback',
-		customClass: 'callback-form',
-		bgcolor: 'transparent',
-		onPreOpen: function(obj){
-			document.querySelector('#wrapper-for-scroll-fix').classList.add('modal-open');
-			// console.log(obj)
-		},
-		onPostOpen: function(obj, gallIndex, thenext, theprev){
-			document.querySelector('.callback-form').querySelector('[data-modal-close]').addEventListener('click', callbackModalClose);
-	    },
-		onPreClose: function(obj, gallIndex, thenext, theprev){
-			document.querySelector('#wrapper-for-scroll-fix').classList.remove('modal-open');
-			document.querySelector('.callback-form').querySelector('[data-modal-close]').removeEventListener('click', callbackModalClose);
-		}
-	});
-
-	function callbackModalClose(e) {
-		callbackBox.close();
+			},
+			onPreClose: function(obj, gallIndex, thenext, theprev){
+				document.querySelector('#wrapper-for-scroll-fix').classList.remove('modal-open');
+			}
+		});
 	}
 
-	const overallBox = new VenoBox({
-		selector: '.overal-modal',
-		onPreOpen: function(obj){
-			document.querySelector('#wrapper-for-scroll-fix').classList.add('modal-open');
-		},
-		onPreClose: function(obj, gallIndex, thenext, theprev){
-			document.querySelector('#wrapper-for-scroll-fix').classList.remove('modal-open');
+	if(document.querySelector('.callback') !== null){
+		var callbackBox = new VenoBox({
+			selector: '.callback',
+			customClass: 'callback-form',
+			bgcolor: 'transparent',
+			onPreOpen: function(obj){
+				document.querySelector('#wrapper-for-scroll-fix').classList.add('modal-open');
+				// console.log(obj)
+			},
+			onPostOpen: function(obj, gallIndex, thenext, theprev){
+				document.querySelector('.callback-form').querySelector('[data-modal-close]').addEventListener('click', callbackModalClose);
+		    },
+			onPreClose: function(obj, gallIndex, thenext, theprev){
+				document.querySelector('#wrapper-for-scroll-fix').classList.remove('modal-open');
+				document.querySelector('.callback-form').querySelector('[data-modal-close]').removeEventListener('click', callbackModalClose);
+			}
+		});
+		
+		function callbackModalClose(e) {
+			callbackBox.close();
 		}
-	});
+	}
 
+	if(document.querySelector('.overal-modal') !== null){
+		var overallBox = new VenoBox({
+			selector: '.overal-modal',
+			onPreOpen: function(obj){
+				document.querySelector('#wrapper-for-scroll-fix').classList.add('modal-open');
+			},
+			onPreClose: function(obj, gallIndex, thenext, theprev){
+				document.querySelector('#wrapper-for-scroll-fix').classList.remove('modal-open');
+			}
+		});
+	}
 	// End VenoBox modal
 
+	// click on services link
+		[...document.querySelectorAll('[data-menu-close]')].forEach(item => {
+			item.onclick = (e) => mobMenuClose();
+		});
+
+		[...document.querySelectorAll('[data-scroll-services]')].forEach(item => {
+			item.onclick = (e) => {
+				mobMenuClose();
+				scrollToServices();
+			}
+		});
+
+	// End click on services link
+
 	// Scroll to specific values
+	if(document.querySelector('#scroll-to-services') !== null && document.getElementById('services') !== null){
 		document.getElementById('scroll-to-services').onclick = (e) => {
-			window.scroll({
-			  top: document.getElementById('services').offsetTop - (document.getElementById('header-fixed').offsetHeight + 15), 
-			  left: 0, 
-			  behavior: 'smooth'
-			});
-			setTimeout(() => overallBox.open(document.querySelector('.overal-modal')), 1000);
+			scrollToServices();
 		}
+	}
+	function scrollToServices() {
+		window.scroll({
+			top: document.getElementById('services').offsetTop - (document.getElementById('header-fixed').offsetHeight + 15), 
+			left: 0, 
+			behavior: 'smooth'
+		});
+		setTimeout(() => overallBox.open(document.querySelector('.overal-modal')), 1000);
+	}
 
 }); //DOMContentLoaded

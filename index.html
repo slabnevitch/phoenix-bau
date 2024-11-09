@@ -25,8 +25,12 @@
             <div class="ml-[8.66%] max-w-[114px] mr-[262px] relative z-4 shrink-0 md:max-w-[50px] md:mr-0 md:ml-2.5"><picture><source srcset="img/footer-logo.webp" type="image/webp"><img src="img/footer-logo.png" alt="alt" class="max-w-full"></picture></div>
             <nav class="mr-[5.33%] lg:mr-6">
               <ul class="flex flex-wrap gap-x-12 gap-y-6 lg:gap-x-4 group-[.menu-opened]:right-0 xl:gap-x-6 md:fixed md:z-10 md:top-0 md:-right-[100%] md:pt-[100px] md:pb-[50px] md:flex-col md:flex-nowrap md:justify-center md:items-center md:gap-y-[2rem] md:w-full md:h-full md:transition-[right] md:duration-500 md:overflow-y-auto md:bg-graybg md:before:fixed md:before:w-full md:before:h-[100px] md:before:top-0 md:before:-right-[100%] md:before:transition-[right] md:before:z-2 md:before:bg-graybg">
-                <li><a href="#" class="text-2xl font-bold uppercase transition-color hover:text-accent xl:text-xl md:text-2xl">Главная</a></li>
-                <li><a href="#" class="text-2xl font-bold uppercase transition-color hover:text-accent xl:text-xl md:text-2xl">Проекты</a></li>
+                <li>
+                  <button data-menu-close type="button" href="#" class="text-2xl font-bold uppercase transition-color hover:text-accent xl:text-xl md:text-2xl">Главная</button>
+                </li>
+                <li>
+                  <button data-menu-close data-scroll-services class="text-2xl font-bold uppercase transition-color hover:text-accent xl:text-xl md:text-2xl">Проекты</button>
+                </li>
               </ul>
             </nav>
             <div class="flex font-bold text-base gap-x-8 xl:gap-x-4 md:hidden">
@@ -310,11 +314,11 @@
           <div class="mx-auto max-w-cont px-[30px] py-10 xs:pt-2 xs:pb-5">
             <nav class="justify-center mb-[18px] hidden xs:flex">
               <ul>
-                <li class="text-center"><a href="#" class="font-medium text-[11px] uppercase">О НАС</a></li>
-                <li class="text-center"><a href="#" class="font-medium text-[11px] uppercase">все проекты</a></li>
-                <li class="text-center"><a href="#" class="font-medium text-[11px] uppercase">услуги</a></li>
-                <li class="text-center"><a href="#" class="font-medium text-[11px] uppercase">заказать звонок</a></li>
-                <li class="text-center"><a href="#" class="font-medium text-[11px] uppercase">контакты</a></li>
+                <li class="text-center"><a href="#" data-vbtype="" class="font-medium text-[11px] uppercase">О НАС</a></li>
+                <li class="text-center"><a href="#" data-vbtype="" class="font-medium text-[11px] uppercase">все проекты</a></li>
+                <li class="text-center"><a href="#" data-vbtype="" class="font-medium text-[11px] uppercase">услуги</a></li>
+                <li class="text-center"><a href="#callback-modal" data-vbtype="inline" class="callback font-medium text-[11px] uppercase">заказать звонок</a></li>
+                <li class="text-center"><a href="#" data-vbtype="" class="font-medium text-[11px] uppercase">контакты</a></li>
               </ul>
             </nav>
             <div class="mb-6 text-[27px] font-medium xs:text-[12px] xs:leading-[15px] xs:text-center xs:mb-4">&copy; 
