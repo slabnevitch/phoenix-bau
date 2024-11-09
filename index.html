@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="ru" class="h-full group">
+  <head>
+    <meta charset="utf-8">
+    <title>Главная страница</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico" sizes="16x16">
+    <link rel="icon" href="favicon.ico" sizes="32x32">
+    <link rel="icon" href="img/favicon/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="favic.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="stylesheet" href="css/main.min.css">
+  </head>
+  <body class="h-full">
+    <div id="wrapper-for-scroll-fix" class="flex min-h-full flex-col overflow-hidden supports-[overflow: clip]:overflow-clip">
+      <header class="shrink-0 grow-0 absolute w-full top-0 left-0 container z-10">
+        <div id="header-fixed" class="fixed left-0 top-0 w-full before:absolute before:top-0 before:left-0 before:h-full before:w-1/2 before:bg-black after:absolute after:top-0 after:right-0 after:h-full after:w-[calc((100vw-1408px)/2)] after:bg-[#dddddc] -after:z-1">
+          <div class="relative z-4 min-h-[157px] mx-auto max-w-[1408px] flex items-center px-4 py-2 bg-[#dddddc] bg-[url('/img/header-bg.jpg')] bg-no-repeat bg-contain lg:justify-between md:h-[80px] md:min-h-0 md:justify-start md:bg-[url('/img/header-bg-mob.jpg')] md:py-[5px]">
+            <div class="ml-[8.66%] max-w-[114px] mr-[262px] relative z-4 shrink-0 md:max-w-[50px] md:mr-0 md:ml-2.5"><img src="img/footer-logo.png" alt="alt" class="max-w-full"></div>
+            <nav class="mr-[5.33%] lg:mr-6">
+              <ul class="flex flex-wrap gap-x-12 gap-y-6 lg:gap-x-4 group-[.menu-opened]:right-0 md:fixed md:z-10 md:top-0 md:-right-[100%] md:pt-[100px] md:pb-[50px] md:flex-col md:flex-nowrap md:justify-center md:items-center md:gap-y-[2rem] md:w-full md:h-full md:transition-[right] md:duration-500 md:overflow-y-auto md:bg-graybg md:before:fixed md:before:w-full md:before:h-[100px] md:before:top-0 md:before:-right-[100%] md:before:transition-[right] md:before:z-2 md:before:bg-graybg">
+                <li><a href="#" class="text-2xl font-bold uppercase transition-color hover:text-accent">Главная</a></li>
+                <li><a href="#" class="text-2xl font-bold uppercase transition-color hover:text-accent">Проекты</a></li>
+              </ul>
+            </nav>
+            <div class="flex font-bold text-base gap-x-8 xl:gap-x-4 md:hidden">
+              <div class="mr-[33px] xl:mr-[15px]"><a href="tel:+79017535491" class="flex items-center gap-x-4 mb-5"><span class="w-6 shrink-0"><img src="img/icons/phone.png" alt="alt" class="w-full"></span><span>+79017535491</span></a><a href="mailto:info@fenixbau.ru" class="flex items-center gap-x-4"><span class="w-6 shrink-0"><img src="img/icons/mail.png" alt="alt" class="w-full"></span><span>info@fenixbau.ru</span></a></div>
+              <div class="flex gap-x-4 lg:hidden"><span class="w-[18px] shrink-0"><img src="img/icons/loc.png" alt="alt" class="w-full"></span>
+                <address class="max-w-48 not-italic">г. Москва, ул. Гольяновская, д. 3А, к. 3, пом. 1Н</address>
+              </div>
+            </div>
+            <nav class="ml-auto pl-4 flex flex-col gap-4 shrink-0 lg:ml-0 md:ml-auto md:gap-2"><a href="#" class="block w-[53px] h-[53px] md:w-[28px] md:h-[28px] bg-[url('/img/icons/whatsapp.png')] bg-no-repeat bg-contain md:bg-[url('/img/icons/whatsapp-mob.png')]"></a><a href="#" class="block w-[53px] h-[53px] md:w-[28px] md:h-[28px] bg-[url('/img/icons/tg.png')] bg-no-repeat bg-contain md:bg-[url('/img/icons/tg-mob.png')]"></a></nav>
+            <button id="burger" type="button" class="ml-[13px] w-[46px] h-[46px] shrink-0 flex items-center justify-center z-10 group bg-accent rounded-full hidden md:flex md:mr-[15px]">
+              <div class="w-[26px] h-[20px] relative"><span class="absolute left-0 top-0 w-full h-[3px] bg-white cursor-pointer transition ease-in-out group-[.on]:opacity-0"></span><span class="absolute left-0 top-[calc(52%-1.5px)] w-full h-[3px] bg-white cursor-pointer transition ease-in-out group-[.on]:rotate-45 -group-[.on]:translate-y-[5px]"></span><span class="absolute left-0 bottom-px w-full h-[3px] bg-white cursor-pointer transition ease-in-out group-[.on]:-rotate-45 group-[.on]:bottom-[8px]"></span></div>
+            </button>
+          </div>
+        </div>
+      </header>
+      <main class="flex-auto shrink-1 grow-1">
+        <div class="relative aspect-[1920/1226] mt-[157px] md:mt-[80px] sm:aspect-auto sm:h-[242px]"><img src="img/hero-bg.jpg" alt="alt" class="object-cover w-full h-full object-center"></div>
+        <div class="flex flex-col">
+          <section class="pt-[47px] sm:pt-0 xs:order-2">
+            <div class="mx-auto max-w-cont px-[30px] flex gap-x-[5.97%] lg:flex-col">
+              <div class="basis=[39.28%] shrink-0 aspect-[553/800 lg:order-2 sm:hidden"><img src="img/we/1.jpg" alt="alt" class="object-cover w-full h-full"></div>
+              <div class="shrink grow basis-auto xs:pb-[18px]">
+                <div class="relative after:absolute after:h-px after:bg-black after:bottom-[-16px] after:left-[-40px] after:w-[calc(100%_+_((100vw_-_1408px)/2)_+_30px)] mb-16 xl:pt-12 xl:after:w-[calc(100%_+_60px)] xl:after:left-[-5px] sm:after:bottom-[-7px] sm:after:bg-[#B3B3B3] sm:mb-[30px]">
+                  <h2 class="relative -left-[30px] font-normal text-[357px] [line-height:_0.65] text-[#aeaeae] sm:text-[131px] sm:left-[-10px]">Мы</h2>
+                  <button id="scroll-to-services" type="button" class="absolute top-0 right-0 pl-6 w-[175px] h-[175px] rounded-full flex items-center justify-center text-[#323232] border border-[#A4A4A4] uppercase text-[29px] text-left sm:w-[86px] sm:h-[86px] sm:text-[14px] sm:pl-2.5 sm:top-4 transition-colors hover:bg-accent hover:text-white hover:border-transparent">все проекты</button>
+                </div>
+                <div class="mb-16 sm:mb-0">
+                  <p class="text-2xl text-justify sm:text-[18px] xs:leading-[calc(21.88/24)]"><span class="font-bold">ФЕНИКС БАУ</span> заслужила репутацию одной из самых надёжных строительных компаний благодаря стабильности, технологичности и верности обязательствам.</p>
+                  <p class="text-2xl text-justify sm:text-[18px] xs:leading-[calc(21.88/24)]">Мы придерживаемся принципов немецкой инженерии, импортируем материалы высокого качества из Германии, чтобы каждый проект соответствовал европейским стандартам.</p>
+                </div>
+                <div class=" px-11 py-9 bg-accent sm:hidden">
+                  <p class="text-white text-2xl leading-[calc(36/24)] text-justify">Мы строим совершенство. Предоставляем услуги по строительству высшего класса качественно, быстро с привлечением инноваций. Более 10 лет благодаря вниманию к деталям и исключительному мастерству команда экспертов предвосхищает ожидания клиентов.</p>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="pt-28 sm:pt-8 xs:pt-0">
+            <div class="mx-auto max-w-cont px-[30px]">
+              <div class="relative mb-20 after:absolute after:h-px after:bg-black after:bottom-[-10px] after:right-0 after:w-[calc(100%_+_((100vw_-_1408px)/2))] mb-16 xl:pt-12 xl:after:w-[calc(100%_+_32px)] sm:after:bottom-[-7px] sm:after:bg-[#B3B3B3] sm:mb-[30px] sm:hidden">
+                <h2 class="relative z-[2] text-[227px] text-[#aeaeae] [line-height:_0.65]">Наши услуги</h2>
+              </div>
+              <div class="hidden flex flex-col items-center font-bold leading-6 gap-y-6 py-[10px] xs:flex minw:px-0">
+                <p class="text-base uppercase">Идеи, которые вдохновляют —<br>качество, которое впечатляет. </p>
+                <p class="text-base uppercase">Нашим решениям - доверяют!</p>
+              </div>
+              <div class="grid grid-cols-2 gap-y-11 gap-x-[16.34%] mb-9 xs:gap-y-[14px] xs:px-4 xs:bg-graybg xs:mx-[-30px] xs:py-5 xs:justify-evenly xs:gap-x-[15px] xs:mb-0">
+                <div id="services" class="flex flex-col relative items-center">
+                  <div data-gall="myGallery1" data-href="img/services/gal-1.jpg" class="serveces-modal cursor-pointer relative flex flex-col items-center justify-end w-full py-24 max-w-[524px] aspect-[1/1] mb-[26px] transition-all rounded-full overflow-hidden after:absolute after:top-0 after:left-0 after:z-[2] after:w-full after:h-full after:rounded-full after:bg-accent after:opacity-60 after:will-change-transform after:transition-transform after:duration-500 after:scale-0 hover:after:scale-100 hover:justify-start sm:py-[35px] sm:px-[20px] xs:mb-0 xss:max-w-[134px] xss:max-h-[134px] xss:py-[25px]">
+                    <h3 class="relative max-w-[300px] z-[3] font-bold text-[28px] text-white uppercase text-center sm:text-[20px] xss:text-[10px]">укладка всех видов полов</h3><img src="img/services/1.png" alt="alt" class="absolute left-0 top-0 object-cover w-full h-full">
+                  </div>
+                  <div data-gall="myGallery1" data-href="img/services/gal-2.jpg" class="serveces-modal"></div>
+                  <div data-gall="myGallery1" data-href="img/services/gal-3.jpg" class="serveces-modal"></div>
+                  <p class="text-center font-bold text-[23px] [line-height:calc(31.5/28)] xs:hidden">Мы специализируемся на укладке высококачественного пола, используя <br>только разные виды материалы, <br>импортированные из Германии.</p>
+                </div>
+                <div id="services" class="flex flex-col relative items-center">
+                  <div data-gall="myGallery2" data-href="img/services/gal-2.jpg" class="serveces-modal cursor-pointer relative flex flex-col items-center justify-end w-full py-24 max-w-[524px] aspect-[1/1] mb-[26px] transition-all rounded-full overflow-hidden after:absolute after:top-0 after:left-0 after:z-[2] after:w-full after:h-full after:rounded-full after:bg-accent after:opacity-60 after:will-change-transform after:transition-transform after:duration-500 after:scale-0 hover:after:scale-100 hover:justify-start sm:py-[35px] sm:px-[20px] xs:mb-0 xss:max-w-[134px] xss:max-h-[134px] xss:py-[25px]">
+                    <h3 class="relative max-w-[300px] z-[3] font-bold text-[28px] text-white uppercase text-center sm:text-[20px] xss:text-[10px]">реставрация</h3><img src="img/services/2.png" alt="alt" class="absolute left-0 top-0 object-cover w-full h-full">
+                  </div><a data-gall="myGallery2" href="https://avatars.mds.yandex.net/get-shedevrum/11425623/002a60c1e85f11ee89e87ab0f2fccf97/orig" class="serveces-modal"></a><a data-gall="myGallery2" href="https://i.pinimg.com/736x/d9/11/80/d911806b9912e931e2b96bd4ae1c4aff.jpg" class="serveces-modal"></a>
+                  <p class="text-center font-bold text-[23px] [line-height:calc(31.5/28)] xs:hidden">Наша команда экспертов имеет навыки в реставрации старых зданий до их прежнего величия, используя традиционные техники <br>и современные материалы.</p>
+                </div>
+                <div id="services" class="flex flex-col relative items-center">
+                  <div data-gall="myGallery3" data-href="img/services/gal-3.jpg" class="serveces-modal cursor-pointer relative flex flex-col items-center justify-end w-full py-24 max-w-[524px] aspect-[1/1] mb-[26px] transition-all rounded-full overflow-hidden after:absolute after:top-0 after:left-0 after:z-[2] after:w-full after:h-full after:rounded-full after:bg-accent after:opacity-60 after:will-change-transform after:transition-transform after:duration-500 after:scale-0 hover:after:scale-100 hover:justify-start sm:py-[35px] sm:px-[20px] xs:mb-0 xss:max-w-[134px] xss:max-h-[134px] xss:py-[25px]">
+                    <h3 class="relative max-w-[300px] z-[3] font-bold text-[28px] text-white uppercase text-center sm:text-[20px] xss:text-[10px]">управление проектами</h3><img src="img/services/3.png" alt="alt" class="absolute left-0 top-0 object-cover w-full h-full">
+                  </div><a data-gall="myGallery3" href="https://i.artfile.ru/1024x1024_294133_[www.ArtFile.ru].jpg" class="serveces-modal"></a><a data-gall="myGallery3" href="https://s6d2.turboimg.net/sp/f656d9af7a334e993e444476fd296288/abbie_cat06_028-lg.jpg" class="serveces-modal"></a>
+                  <p class="text-center font-bold text-[23px] [line-height:calc(31.5/28)] xs:hidden">Мы предлагаем услуги по управлению – <br>каждый курируемый проект <br>завершается в срок, в рамках бюджета <br>и в соответствии со стандартами качества.</p>
+                </div>
+                <div id="services" class="flex flex-col relative items-center">
+                  <div data-gall="myGallery4" data-href="img/services/gal-4.jpg" class="serveces-modal cursor-pointer relative flex flex-col items-center justify-end w-full py-24 max-w-[524px] aspect-[1/1] mb-[26px] transition-all rounded-full overflow-hidden after:absolute after:top-0 after:left-0 after:z-[2] after:w-full after:h-full after:rounded-full after:bg-accent after:opacity-60 after:will-change-transform after:transition-transform after:duration-500 after:scale-0 hover:after:scale-100 hover:justify-start sm:py-[35px] sm:px-[20px] xs:mb-0 xss:max-w-[134px] xss:max-h-[134px] xss:py-[25px]">
+                    <h3 class="relative max-w-[300px] z-[3] font-bold text-[28px] text-white uppercase text-center sm:text-[20px] xss:text-[10px]">дизайн</h3><img src="img/services/4.png" alt="alt" class="absolute left-0 top-0 object-cover w-full h-full">
+                  </div>
+                  <p class="text-center font-bold text-[23px] [line-height:calc(31.5/28)] xs:hidden">Команда дизайнеров создает <br>уникальные проекты, отражающие <br>индивидуальный стиль и видение <br>клиентов.</p>
+                </div>
+                <div class="hidden">
+                  <div data-gall="myGallery1" data-href="img/services/gal-1.jpg" class="overal-modal"></div>
+                  <div data-gall="myGallery1" data-href="img/services/gal-2.jpg" class="overal-modal"></div>
+                  <div data-gall="myGallery1" data-href="img/services/gal-3.jpg" class="overal-modal"></div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <section class="pt-14 pb-[88px] bg-graybg xs:pt-[17px] xs:pb-3">
+          <div class="mx-auto max-w-[1408px] px-4">
+            <h2 class="text-center font-bold uppercase text-[48.59px] [line-height:calc(58/48)] mb-14 xs:text-[14.64px] xs:hidden">Откройте для себя сочетание немецкой точности и российского тепла в каждом шаге</h2>
+            <h2 class="hidden text-center font-bold uppercase [line-height:calc(58/48)] mb-2.5 xs:block">немецкое качество и русская душа</h2>
+            <div class="grid grid-cols-[repeat(4,205px)] justify-between gap-x-5 gap-y-20 md:grid-cols-[repeat(2,205px)] xs:grid-cols-[repeat(2,90px)] xs:gap-y-4 md:justify-evenly">
+              <article class="text-center sm:flex sm:flex-col items-center">
+                <div class="max-w-[205px] aspect-[1/1] mb-[36px] xs:max-w-[90px] sm:mb-[7px]"><img src="img/accuracy/1.jpg" alt="alt" class="w-full max-h-full"></div>
+                <p class="text-xl font-bold tracking-tighter xs:text-[13px] xs:leading-[12px]">Более 2000 <br>сделанных объектов</p>
+              </article>
+              <article class="text-center sm:flex sm:flex-col items-center">
+                <div class="max-w-[205px] aspect-[1/1] mb-[36px] xs:max-w-[90px] sm:mb-[7px]"><img src="img/accuracy/2.jpg" alt="alt" class="w-full max-h-full"></div>
+                <p class="text-xl font-bold tracking-tighter xs:text-[13px] xs:leading-[12px]">Более 10 лет опыта</p>
+              </article>
+              <article class="text-center sm:flex sm:flex-col items-center">
+                <div class="max-w-[205px] aspect-[1/1] mb-[36px] xs:max-w-[90px] sm:mb-[7px]"><img src="img/accuracy/3.jpg" alt="alt" class="w-full max-h-full"></div>
+                <p class="text-xl font-bold tracking-tighter xs:text-[13px] xs:leading-[12px]">Более 30 <br>европейских специалистов</p>
+              </article>
+              <article class="text-center sm:flex sm:flex-col items-center">
+                <div class="max-w-[205px] aspect-[1/1] mb-[36px] xs:max-w-[90px] sm:mb-[7px]"><img src="img/accuracy/4.jpg" alt="alt" class="w-full max-h-full"></div>
+                <p class="text-xl font-bold tracking-tighter xs:text-[13px] xs:leading-[12px]">Штаб-квартира <br>в Германии, <br>филиал в России</p>
+              </article>
+            </div>
+          </div>
+        </section>
+        <section class="pt-[72px] pb-[74px] bg-accent text-white xs:pt-[22px] xs:pb-6">
+          <div class="mx-auto max-w-cont px-[30px]">
+            <div class="relative mb-20 after:absolute after:h-px after:bg-white after:bottom-[-10px] after:right-[5px] after:w-[calc(100%_+_((100vw_-_1408px)/2))] mb-16 xl:after:w-[calc(100%_+_32px)] sm:after:bottom-[-7px] sm:after:bg-[#B3B3B3] sm:mb-[30px]">
+              <h2 class="relative z-[2] text-[140px] [line-height:_0.65] lg:text-[100px] md:text-[100px] sm:text-[50px] xss:text-[30px]">Наши преимущества</h2>
+            </div>
+            <div class="grid grid-cols-2 gap-x-[4.97%] gap-y-20 md:grid-cols-1 xs:gap-y-6">
+              <article class="grid grid-cols-[112px,1fr] gap-x-5 xs:grid-cols-[40px,1fr]  md:order-1">
+                <div><img src="img/features/1.png" alt="alt" class="max-w-full"></div>
+                <div>
+                  <h3 class="text-[27px] font-bold pb-2.5 mb-2 border-b-[3px] border-white uppercase xs:text-[13.4px] xs:pb-1 xs:mb-1 xs:border-b-[1px]">качество</h3>
+                  <div>
+                    <p class="text-2xl font-medium xs:text-xs">Мы гарантируем исключительное качество в каждом аспекте нашей работы.</p>
+                  </div>
+                </div>
+              </article>
+              <article class="grid grid-cols-[112px,1fr] gap-x-5 xs:grid-cols-[40px,1fr]  md:order-3">
+                <div><img src="img/features/2.png" alt="alt" class="max-w-full"></div>
+                <div>
+                  <h3 class="text-[27px] font-bold pb-2.5 mb-2 border-b-[3px] border-white uppercase xs:text-[13.4px] xs:pb-1 xs:mb-1 xs:border-b-[1px]">Инновации</h3>
+                  <div>
+                    <p class="text-2xl font-medium xs:text-xs">Мы применяем актуальные технологии и техники, чтобы обеспечить нашим клиентам лучшие из возможных решений.</p>
+                  </div>
+                </div>
+              </article>
+              <article class="grid grid-cols-[112px,1fr] gap-x-5 xs:grid-cols-[40px,1fr]  md:order-2">
+                <div><img src="img/features/3.png" alt="alt" class="max-w-full"></div>
+                <div>
+                  <h3 class="text-[27px] font-bold pb-2.5 mb-2 border-b-[3px] border-white uppercase xs:text-[13.4px] xs:pb-1 xs:mb-1 xs:border-b-[1px]">стабильность</h3>
+                  <div>
+                    <p class="text-2xl font-medium xs:text-xs">Наш приоритет – экологически дружественные практики, поэтому мы используем современные материалы и минимизируем отходы во всех наших проектах.</p>
+                  </div>
+                </div>
+              </article>
+              <article class="grid grid-cols-[112px,1fr] gap-x-5 xs:grid-cols-[40px,1fr]  md:order-4">
+                <div><img src="img/features/4.png" alt="alt" class="max-w-full"></div>
+                <div>
+                  <h3 class="text-[27px] font-bold pb-2.5 mb-2 border-b-[3px] border-white uppercase xs:text-[13.4px] xs:pb-1 xs:mb-1 xs:border-b-[1px]">обслуживание</h3>
+                  <div>
+                    <p class="text-2xl font-medium xs:text-xs">Мы стараемся, чтобы каждый клиент чувствовал себя ценным и получил только позитивный опыт от сотрудничества с ФЕНИКС БАУ. Индивидуальный подход к каждому клиенту.</p>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+        <section class="grid grid-cols-[41.15%,1fr] bg-graybg xl:grid-cols-2 lg:grid-cols-1 sm:bg-transparent">
+          <div class="max-w-[537px] py-6 justify-self-end flex flex-col justify-center items-end gap-y-[43px] max-w-[535px] pr-[55px] lg:order-3 lg:items-center lg:max-w-full lg:px-[30px] md:hidden">
+            <p class="text-justify text-[27.65px] font-bold leading-[41.24px] uppercase">Идеи, которые вдохновляют — качество, которое впечатляет. </p>
+            <p class="text-center text-[27.65px] font-bold leading-[41.24px] uppercase">Нашим решениям - доверяют!</p>
+          </div>
+          <div class="lg:order-1">
+            <div class="tiny-sldr">
+              <div class="aspect-[1128/680"><img src="img/slider/1.jpg" alt="alt" class="object-cover w-full h-full"></div>
+              <div class="aspect-[1128/680"><img src="img/slider/2.jpg" alt="alt" class="object-cover w-full h-full"></div>
+              <div class="aspect-[1128/680"><img src="img/slider/3.jpg" alt="alt" class="object-cover w-full h-full"></div>
+            </div>
+          </div>
+          <div class="py-6 flex flex-col justify-center items-end lg:order-4 lg:items-center sm:pt-5 sm:pb-6">
+            <div class="max-w-[537px] text-center pr-[55px] lg:pr-0">
+              <div class="text-[44.17px] font-bold uppercase sm:text-[21.58px]">свяжитесь с нами</div>
+              <div class="relative pt-[70px] sm:pt-[30px]"><img src="img/icons/arrow.png" alt="alt" class="absolute right-[-15px] top-[-23px] sm:w-6 sm:right-[-8px] sm:top-[-9px]">
+                <button type="button" data-href="#callback-modal" data-vbtype="inline" class="callback h-[88px] px-[38px] inline-flex items-center justify-center text-[30px] font-bold text-white uppercase bg-[url('/img/btn-bg.png')] bg-no-repeat bg-contain hover:bg-[url('/img/btn-bg-hover.png')] transition-all sm:text-[15px] sm:h-[43px] sm:px-[16px]">заказать звонок</button>
+              </div>
+            </div>
+          </div>
+          <div class="bg-accent lg:order-2">
+            <div data-trigger class="max-w-[871px] pt-24 pb-[120px] pl-[90px] pr-[56px] text-white lg:max-w-full md:px-[30px] md:pt-5 md:pb-6">
+              <div data-percentage="70" class="mb-12 md:mb-[15px]">
+                <div class="flex justify-between items-end gap-x-4 mb-4 md:mb-2 sm:mb-0">
+                  <div class="text-2xl font-bold sm:text-[15px]">Частные объекты</div>
+                  <div class="text-[30.67px] font-bolditalic leading-7 sm:text-[19px]">70%</div>
+                </div>
+                <div class="relative h-5 bg-[#d05a51] rounded-xl overflow-hidden md:h-2.5">
+                  <div data-bar class="absolute w-0 left-0 top-0 h-full bg-white rounded-xl transition-all duration-[5000ms]"></div>
+                </div>
+              </div>
+              <div data-percentage="20" class="mb-12 md:mb-[15px]">
+                <div class="flex justify-between items-end gap-x-4 mb-4 md:mb-2 sm:mb-0">
+                  <div class="text-2xl font-bold sm:text-[15px]">Коммерческая недвижимость</div>
+                  <div class="text-[30.67px] font-bolditalic leading-7 sm:text-[19px]">20%</div>
+                </div>
+                <div class="relative h-5 bg-[#d05a51] rounded-xl overflow-hidden md:h-2.5">
+                  <div data-bar class="absolute w-0 left-0 top-0 h-full bg-white rounded-xl transition-all duration-[5000ms]"></div>
+                </div>
+              </div>
+              <div data-percentage="10">
+                <div class="flex justify-between items-end gap-x-4 mb-4 md:mb-2 sm:mb-0">
+                  <div class="text-2xl font-bold sm:text-[15px]">Отели</div>
+                  <div class="text-[30.67px] font-bolditalic leading-7 sm:text-[19px]">10%</div>
+                </div>
+                <div class="relative h-5 bg-[#d05a51] rounded-xl overflow-hidden md:h-2.5">
+                  <div data-bar class="absolute w-0 left-0 top-0 h-full bg-white rounded-xl transition-all duration-[5000ms]"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div id="callback-modal" class="hidden">
+          <div class="relative max-w-[1392px] mx-auto px-[66px] pt-[50px] pb-[88px] bg-white rounded-3xl xl:px-[30px] xl:py-[20px] xl:max-w-[600px]">
+            <button data-modal-close type="button" class="absolute top-6 right-12 w-[50px] h-[50px] bg-[url('/img/icons/modal-close.png')] bg-no-repeat bg-contain xl:w-[20px] xl:h-[20px] xl:top-[20px] xl:right-[30px]"></button>
+            <div class="mb-10 text-[52px] font-bold text-center xl:text-[30px] xl:mb-5 md:text-[18px] xl:px-10">Пожалуйста, заполните форму</div>
+            <form action="#">
+              <input autocomplete="off" type="text" name="" placeholder="Введите Ваше имя" class="h-[135px] block w-full mb-10 px-[50px] text-[40px] text-[#2c2c2c] rounded-[40px] border border-black bg-graybg placeholder-[#2c2c2c] focus:outline-none invalid:outline-none focus:bg-white focus:border-accent xl:h-[50px] xl:text-[18px] xl:rounded-3xl xl:mb-5 xl:px-[20px]">
+              <input autocomplete="off" type="text" name="" placeholder="Введите номер телефона*" class="h-[135px] block w-full mb-10 px-[50px] text-[40px] text-[#2c2c2c] rounded-[40px] border border-black bg-graybg placeholder-[#2c2c2c] focus:outline-none invalid:outline-none focus:bg-white focus:border-accent xl:h-[50px] xl:text-[18px] xl:rounded-3xl xl:mb-5 xl:px-[20px]">
+              <textarea name="" placeholder="Сообщение" class="h-[360px] py-8 mb-10 block w-full px-[50px] text-[40px] text-[#2c2c2c] rounded-[40px] border border-black bg-graybg placeholder-[#2c2c2c] focus:outline-none invalid:outline-none focus:bg-white focus:border-accent xl:h-[100px] xl:text-[18px] xl:rounded-3xl xl:mb-5 xl:py-2 xl:px-[20px]"></textarea>
+              <button type="submit" class="block h-[133px] w-full bg-accent text-[52.24px] font-bold text-white text-center rounded-[40px] xl:text-[20px] xl:h-[50px] transition-colors hover:bg-[#bb2419] active:bg-[#bb2419]">Отправить</button>
+            </form>
+          </div>
+        </div>
+        <div class="flex flex-col">
+          <div>
+            <div class="flex md:block">
+              <div class="basis-1/2 shrink-0 grow-0">
+                <div class="hidden sm:block py-2.5 md:px-[30px]">
+                  <div class="text-[33px] leading-[33px] text-accent font-bold sm:text-[15px] sm:leading-[17.18px]">Адрес организации в России:</div>
+                  <address class="basis-1/2 shrink-0 grow-0 font-bold text-[33px] leading-[33px]  not-italic sm:text-[15px] sm:leading-[17.18px]">105094, Россия, г. Москва,<br>ул. Гольяновская, д. 3А, к. 3, пом. 1Н</address>
+                </div><a href="#" class="block aspect-[966/850] md:aspect-[360/348]"><img src="img/maps/moscow.jpg" alt="alt" class="object-cover w-full h-full"></a>
+              </div>
+              <div class="basis-1/2 shrink-0 grow-0">
+                <div class="hidden md:block py-2.5 md:px-[30px]">
+                  <div class="text-[33px] leading-[33px] text-accent font-bold sm:text-[15px] sm:leading-[17.18px]">Адрес организации в Германии:</div>
+                  <address class="basis-1/2 shrink-0 grow-0 font-bold text-[33px] leading-[33px]  not-italic sm:text-[15px] sm:leading-[17.18px]">14193, Берлин, Furtwänglerstraße 8</address>
+                </div><a href="#" class="block aspect-[966/850] md:aspect-[360/348]"><img src="img/maps/berlin.jpg" alt="alt" class="object-cover w-full h-full"></a>
+              </div>
+            </div>
+            <div class="mx-auto max-w-cont flex px-[30px] py-8 md:hidden">
+              <address class="basis-1/2 shrink-0 grow-0 font-bold text-[33px] leading-[33px] not-italic">105094, Россия, г. Москва,<br>ул. Гольяновская, д. 3А, к. 3,<br>пом. 1Н</address>
+              <address class="basis-1/2 shrink-0 grow-0 font-bold text-[33px] text-right leading-[33px] not-italic">14193, Берлин, Furtwänglerstraße 8</address>
+            </div>
+          </div>
+          <section class="pt-[70px] pb-12 bg-graybg md:py-6 sm:-order-1">
+            <div class="mx-auto max-w-cont px-[30px]">
+              <h2 class="mb-[90px] text-5xl text-center leading-[58px] font-bold uppercase md:text-[16px] md:leading-[24px] md:mb-[14px]">БОЛЕЕ 90% довольных клиентов</h2>
+              <div class="flex justify-between flex-wrap mb-[70px] gap-x-2.5 gap-y-5 sm:gap-x-0 md:mb-0">
+                <article class="flex flex-col items-center basis-[230px] shrink-0 grow-0 sm:basis-1/2">
+                  <div class="w-[103px] h-[103px] mb-5 md:w-[60px] md:h-[60px] md:mb-2.5"><img src="img/smile.png" alt="alt" class="w-full max-h-full"></div>
+                  <p class="text-center text-2xl leading-[33px] font-medium md:text-[13px] md:leading-[15px]">Шикарная работа! Спасибо!</p>
+                </article>
+                <article class="flex flex-col items-center basis-[230px] shrink-0 grow-0 sm:basis-1/2">
+                  <div class="w-[103px] h-[103px] mb-5 md:w-[60px] md:h-[60px] md:mb-2.5"><img src="img/smile.png" alt="alt" class="w-full max-h-full"></div>
+                  <p class="text-center text-2xl leading-[33px] font-medium md:text-[13px] md:leading-[15px]">Доволен и советую всем компанию!</p>
+                </article>
+                <article class="flex flex-col items-center basis-[230px] shrink-0 grow-0 sm:basis-1/2">
+                  <div class="w-[103px] h-[103px] mb-5 md:w-[60px] md:h-[60px] md:mb-2.5"><img src="img/smile.png" alt="alt" class="w-full max-h-full"></div>
+                  <p class="text-center text-2xl leading-[33px] font-medium md:text-[13px] md:leading-[15px]">Остался доволен - рекомендую!</p>
+                </article>
+                <article class="flex flex-col items-center basis-[230px] shrink-0 grow-0 sm:basis-1/2">
+                  <div class="w-[103px] h-[103px] mb-5 md:w-[60px] md:h-[60px] md:mb-2.5"><img src="img/smile.png" alt="alt" class="w-full max-h-full"></div>
+                  <p class="text-center text-2xl leading-[33px] font-medium md:text-[13px] md:leading-[15px]">Мне понравилось качество ремонта!</p>
+                </article>
+              </div>
+              <div class="text-center"><a href="#" class="h-[88px] px-[38px] inline-flex items-center justify-center text-[30px] font-bold text-white uppercase bg-[url('/img/btn-bg.png')] bg-no-repeat bg-contain hover:bg-[url('/img/btn-bg-hover.png')] transition-all sm:text-[15px] sm:h-[43px] sm:px-[16px] md:hidden">больше отзывов</a></div>
+            </div>
+          </section>
+        </div>
+      </main>
+      <footer class="shrink-0 grow-0">
+        <div class="bg-black bg-[url('/img/footer-bg.jpg')] bg-no-repeat bg-right-bottom bg-contain md:bg-[url('/img/footer-bg-mob.jpg')]">
+          <div class="py-6 h-[253px] mx-auto max-w-cont px-[30px] flex gap-x-4 items-center justify-between md:justify-center md:h-[70px]">
+            <div class="max-w-[186px] md:max-w-[50px]"><img src="img/footer-logo.png" alt="alt"></div>
+            <div class="flex flex-col gap-y-12 mr-[106px] text-white md:hidden"><a href="tel:+79017535491" class="font-bold text-[33px]">Тел.:+79017535491</a><a href="mailto:info@fenixbau.ru" class="font-bold text-[33px]">e-mail: info@fenixbau.ru</a></div>
+          </div>
+        </div>
+        <div class="bg-[#dddddc]">
+          <div class="mx-auto max-w-cont px-[30px] py-10 xs:pt-2 xs:pb-5">
+            <nav class="justify-center mb-[18px] hidden xs:flex">
+              <ul>
+                <li class="text-center"><a href="#" class="font-medium text-[11px] uppercase">О НАС</a></li>
+                <li class="text-center"><a href="#" class="font-medium text-[11px] uppercase">все проекты</a></li>
+                <li class="text-center"><a href="#" class="font-medium text-[11px] uppercase">услуги</a></li>
+                <li class="text-center"><a href="#" class="font-medium text-[11px] uppercase">заказать звонок</a></li>
+                <li class="text-center"><a href="#" class="font-medium text-[11px] uppercase">контакты</a></li>
+              </ul>
+            </nav>
+            <div class="mb-6 text-[27px] font-medium xs:text-[12px] xs:leading-[15px] xs:text-center xs:mb-4">&copy; 
+              <spam class="uppercase">ООО «ФЕНИСК БАУ». Все права защищены правобладателем.</spam>
+            </div>
+            <p class="max-w-[810px] text-[20px] leading-[20px] font-medium xs:text-[10px] xs:leading-[12.5px] xs:text-center">Вся информация, включая фото, видео, графические изображения, тексты, ссылки и иное является собственностью ООО «ФЕНИСК БАУ». Любые копирования контента без указания на правообладателя не допускаются.   </p>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    
+    
+    
+    <script src="js/main.min.js"></script>
+  </body>
+</html>
