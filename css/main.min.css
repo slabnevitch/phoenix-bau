@@ -2918,8 +2918,8 @@ body {
   .xl\:text-\[30px\] {
     font-size: 30px;
   }
-  .xl\:text-xl {
-    font-size: 1.25rem;
+  .xl\:text-lg {
+    font-size: 1.125rem;
     line-height: 1.75rem;
   }
   .xl\:after\:left-\[-5px\]::after {
