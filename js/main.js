@@ -195,6 +195,9 @@ import {tns} from '~/app/libs-vanilla/tiny-slider/dist/tiny-slider.js';
 //- VenoBox--------------------------
 var VenoBox = require('~/app/libs-vanilla/VenoBox/dist/venobox.js')
 
+//- GraphModal--------------------------
+require('/app/libs-vanilla/graph-modal/dist/graph-modal.min.js')
+
 //- ScrollTrigger--------------------------
 import ScrollTrigger from '~/app/libs-vanilla/scrollTrigger/ScrollTrigger.js';
 
@@ -347,53 +350,20 @@ document.addEventListener('DOMContentLoaded', () => {
 	}
 	// End VenoBox modal
 
-
-	console.log(document.getElementById('myForm'))
-	document.getElementById('myForm').onsubmit = async function(e) {
-		console.log('submit')
-		 e.preventDefault();
-		 const formData = new FormData(this);
-		 const data = Object.fromEntries(formData.entries());
-		 
-		 await fetch('YOUR_WEB_APP_URL', {
-			 method: 'POST',
-			 body: JSON.stringify(data),
-			 headers: { 'Content-Type': 'application/json' }
-		 });
-		 
-		 alert("Form submitted successfully!");
-	 };
-
-	// micromodal
-	// if(document.querySelector('.modal') !== null){
-		MicroModal.init({
-			openTrigger: 'data-micromodal-open', 
-			closeTrigger: 'data-micromodal-close',
-			openClass: 'is-open', 
-			disableFocus: true, 
-			awaitOpenAnimation: true,
-			awaitCloseAnimation: true,
-			disableScroll: true,
-			onShow: function(modal, trigger, event){
-
-				// console.log(trigger)
-				// console.log(event)
-				// console.log(modal)	
-				
-				// при disableScroll: true для компенсации ширины скроллбара (фикс "прыгания" страницы влево)
-				document.querySelector('#wrapper-for-scroll-fix').classList.add('modal-open');
-
-			},
-			onClose: function(modal) {
-				// console.info(`${modal.id} is hidden`);
-				
-				// при disableScroll: true для компенсации ширины скроллбара (фикс "прыгания" страницы влево)
-				document.querySelector('#wrapper-for-scroll-fix').classList.remove('modal-open');
-
-			}
-		});		
-	// }
-	// END micromodal
+	// callback modal
+	const callbackModal = new GraphModal({
+		isOpen: (modal) => {
+			// document.querySelector('#wrapper-for-scroll-fix').classList.add('modal-open');
+		},
+		isClose: () => {
+			console.log('closed');
+			// document.querySelector('#wrapper-for-scroll-fix').classList.remove('modal-open');
+		}
+	});
+	document.querySelector('[data-callback-open]').addEventListener('click', () => {
+		callbackModal.open('first');
+	});
+	// End callback modal
 
 	// click on services link
 		[...document.querySelectorAll('[data-menu-close]')].forEach(item => {

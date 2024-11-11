@@ -203,7 +203,7 @@
               <div class="text-[44.17px] font-bold uppercase sm:text-[21.58px]">свяжитесь с нами</div>
               <div class="relative pt-[70px] sm:pt-[30px]"><picture><source srcset="img/icons/arrow.webp" type="image/webp"><img src="img/icons/arrow.png" alt="alt" class="absolute right-[-15px] top-[-23px] sm:w-6 sm:right-[-8px] sm:top-[-9px]"></picture>
                 <!-- button(type="button" data-href="#callback-modal" data-vbtype="inline" class="callback h-[88px] px-[38px] inline-flex items-center justify-center text-[30px] font-bold text-white uppercase bg-[url('../img/btn-bg.png')] bg-no-repeat bg-contain hover:bg-[url('../img/btn-bg-hover.png')] transition-all sm:text-[15px] sm:h-[43px] sm:px-[16px]") заказать звонок-->
-                <button type="button" data-micromodal-open="modal-1" class="callback h-[88px] px-[38px] inline-flex items-center justify-center text-[30px] font-bold text-white uppercase bg-[url('../img/btn-bg.png')] bg-no-repeat bg-contain hover:bg-[url('../img/btn-bg-hover.png')] transition-all sm:text-[15px] sm:h-[43px] sm:px-[16px]">заказать звонок</button>
+                <button type="button" data-callback-open class="callback h-[88px] px-[38px] inline-flex items-center justify-center text-[30px] font-bold text-white uppercase bg-[url('../img/btn-bg.png')] bg-no-repeat bg-contain hover:bg-[url('../img/btn-bg-hover.png')] transition-all sm:text-[15px] sm:h-[43px] sm:px-[16px]">заказать звонок</button>
               </div>
             </div>
           </div>
@@ -239,24 +239,22 @@
             </div>
           </div>
         </section>
-        <div id="modal-1" aria-hidden="true" class="modal micromodal-slide">
-          <div tabindex="-1" data-micromodal-close class="modal__overlay">
-            <div role="dialog" aria-modal="true" aria-labelledby="modal-1-title" class="modal__container">
-              <main class="modal__content">
-                <div class="relative max-w-[1392px] mx-auto px-[66px] pt-[50px] pb-[88px] bg-white rounded-3xl xl:px-[30px] xl:py-[20px] xl:max-w-[600px]">
-                  <button data-micromodal-close type="button" class="absolute top-6 right-12 w-[50px] h-[50px] bg-[url('../img/icons/modal-close.png')] bg-no-repeat bg-contain xl:w-[20px] xl:h-[20px] xl:top-[20px] xl:right-[30px]"></button>
-                  <div class="mb-10 text-[52px] font-bold text-center xl:text-[30px] xl:mb-5 md:text-[18px] xl:px-10">Пожалуйста, заполните форму</div>
-                  <form action="#" id="myForm">
-                    <input autocomplete="off" type="text" name="" placeholder="Введите Ваше имя" class="h-[135px] block w-full mb-10 px-[50px] text-[40px] text-[#2c2c2c] rounded-[40px] border border-black bg-graybg placeholder-[#2c2c2c] focus:outline-none invalid:outline-none focus:bg-white focus:border-accent xl:h-[50px] xl:text-[18px] xl:rounded-3xl xl:mb-5 xl:px-[20px]">
-                    <label class="relative block h-[135px] mb-10 xl:mb-5 xl:h-[50px]">
-                      <input autocomplete="off" type="text" name="" required placeholder="" class="peer h-[135px] block w-full mb-10 px-[50px] text-[40px] text-[#2c2c2c] rounded-[40px] border border-black bg-graybg placeholder-[#2c2c2c] focus:outline-none invalid:outline-none focus:bg-white focus:border-accent xl:h-[50px] xl:text-[18px] xl:rounded-3xl xl:mb-5 xl:px-[20px]">
-                      <div class="absolute flex items-center h-full w-full left-[25px] top-0 left-0 pointer-events-none text-[40px] text-[#2c2c2c] xl:text-[18px] peer-focus:hidden peer-valid:hidden">Введите номер телефона<span class="text-accent">*</span></div>
-                    </label>
-                    <textarea name="" placeholder="Сообщение" class="h-[360px] py-8 mb-10 block w-full px-[50px] text-[40px] text-[#2c2c2c] rounded-[40px] border border-black bg-graybg placeholder-[#2c2c2c] focus:outline-none invalid:outline-none focus:bg-white focus:border-accent xl:h-[100px] xl:text-[18px] xl:rounded-3xl xl:mb-5 xl:py-2 xl:px-[20px]"></textarea>
-                    <button type="submit" class="block h-[133px] w-full bg-accent text-[52.24px] font-bold text-white text-center rounded-[40px] xl:text-[20px] xl:h-[50px] transition-colors hover:bg-[#bb2419] active:bg-[#bb2419]">Отправить</button>
-                  </form>
-                </div>
-              </main>
+        <div class="graph-modal">
+          <div role="dialog" aria-modal="true" data-graph-target="first" class="graph-modal__container">
+            <button aria-label="Закрыть модальное окно" class="btn-reset js-modal-close absolute z-[2] top-6 right-12 w-[50px] h-[50px] bg-[url('../img/icons/modal-close.png')] bg-no-repeat bg-contain xl:w-[20px] xl:h-[20px] xl:top-[20px] xl:right-[30px]">&#x9;&#x9;</button>
+            <div class="graph-modal__content">
+              <div class="relative max-w-[1392px] mx-auto px-[66px] pt-[50px] pb-[88px] bg-white rounded-3xl xl:px-[30px] xl:py-[20px] xl:max-w-[600px]">
+                <div class="mb-10 text-[52px] font-bold text-center xl:text-[30px] xl:mb-5 md:text-[18px] xl:px-10">Пожалуйста, заполните форму</div>
+                <form action="#" id="myForm">
+                  <input autocomplete="off" type="text" name="name" placeholder="Введите Ваше имя" class="h-[135px] block w-full mb-10 px-[50px] text-[40px] text-[#2c2c2c] rounded-[40px] border border-black bg-graybg placeholder-[#2c2c2c] focus:outline-none invalid:outline-none focus:bg-white focus:border-accent xl:h-[50px] xl:text-[18px] xl:rounded-3xl xl:mb-5 xl:px-[20px]">
+                  <label class="relative block h-[135px] mb-10 xl:mb-5 xl:h-[50px]">
+                    <input autocomplete="off" type="tel" name="phone" required placeholder="" class="peer h-[135px] block w-full mb-10 px-[50px] text-[40px] text-[#2c2c2c] rounded-[40px] border border-black bg-graybg placeholder-[#2c2c2c] focus:outline-none invalid:outline-none focus:bg-white focus:border-accent xl:h-[50px] xl:text-[18px] xl:rounded-3xl xl:mb-5 xl:px-[20px]">
+                    <div class="absolute flex items-center h-full w-full left-[25px] top-0 left-0 pointer-events-none text-[40px] text-[#2c2c2c] xl:text-[18px] peer-focus:hidden peer-valid:hidden">Введите номер телефона<span class="text-accent">*</span></div>
+                  </label>
+                  <textarea name="message" placeholder="Сообщение" class="h-[360px] py-8 mb-10 block w-full px-[50px] text-[40px] text-[#2c2c2c] rounded-[40px] border border-black bg-graybg placeholder-[#2c2c2c] focus:outline-none invalid:outline-none focus:bg-white focus:border-accent xl:h-[100px] xl:text-[18px] xl:rounded-3xl xl:mb-5 xl:py-2 xl:px-[20px]"></textarea>
+                  <button type="submit" class="block h-[133px] w-full bg-accent text-[52.24px] font-bold text-white text-center rounded-[40px] xl:text-[20px] xl:h-[50px] transition-colors hover:bg-[#bb2419] active:bg-[#bb2419]">Отправить</button>
+                </form>
+              </div>
             </div>
           </div>
         </div>
@@ -338,7 +336,21 @@
     
     
     
-    <script src="js/libs/micromodal/micromodal.js"></script>
+    <script>
+      document.getElementById('myForm').onsubmit = async function(e) {
+      	console.log('sub')
+      	e.preventDefault();
+      	const formData = new FormData(this);
+      	const data = Object.fromEntries(formData.entries());
+      	await fetch('https://script.google.com/macros/s/AKfycbwJL1-eB4leqflgB0j357i35DCGK8mjoBOQ1CDsNGUSA69y2rlef1XvCwjVK31vsSnr/exec', {
+      		method: 'POST',
+      		body: JSON.stringify(data),
+      		headers: { 'Content-Type': 'application/json' }
+      	});
+      		alert("Form submitted successfully!");
+      	};
+      
+    </script>
     <script src="js/main.min.js"></script>
   </body>
 </html>
