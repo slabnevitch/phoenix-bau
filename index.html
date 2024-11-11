@@ -16,6 +16,7 @@
     <meta name="theme-color" content="#ffffff">
     <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
     <link rel="stylesheet" href="css/main.min.css">
+    <script crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js?features=NodeList.prototype.forEach%2CArray.prototype.includes%2Cdefault"></script>
   </head>
   <body class="h-full">
     <div id="wrapper-for-scroll-fix" class="flex min-h-full flex-col overflow-hidden supports-[overflow: clip]:overflow-clip">
@@ -23,7 +24,7 @@
         <div id="header-fixed" class="fixed left-0 top-0 w-full before:absolute before:top-0 before:left-0 before:h-full before:w-1/2 before:bg-black after:absolute after:top-0 after:right-0 after:h-full after:w-[calc((100vw-1408px)/2)] after:bg-[#dddddc] -after:z-1">
           <div class="relative z-4 min-h-[157px] mx-auto max-w-[1408px] flex items-center px-4 py-2 bg-[#dddddc] bg-[url('../img/header-bg.jpg')] bg-no-repeat bg-contain lg:justify-between md:h-[80px] md:min-h-0 md:justify-start md:bg-[url('../img/header-bg-mob.jpg')] md:py-[5px]">
             <div class="ml-[8.66%] max-w-[114px] mr-[262px] relative z-4 shrink-0 md:max-w-[50px] md:mr-0 md:ml-2.5"><picture><source srcset="img/footer-logo.webp" type="image/webp"><img src="img/footer-logo.png" alt="alt" class="max-w-full"></picture></div>
-            <nav class="mr-[5.33%] lg:mr-6">
+            <nav class="hidden mr-[5.33%] lg:mr-6 md:block">
               <ul class="flex flex-wrap gap-x-12 gap-y-6 lg:gap-x-4 group-[.menu-opened]:right-0 xl:gap-x-6 md:fixed md:z-10 md:top-0 md:-right-[100%] md:pt-[100px] md:pb-[50px] md:flex-col md:flex-nowrap md:justify-center md:items-center md:gap-y-[2rem] md:w-full md:h-full md:transition-[right] md:duration-500 md:overflow-y-auto md:bg-graybg md:before:fixed md:before:w-full md:before:h-[100px] md:before:top-0 md:before:-right-[100%] md:before:transition-[right] md:before:z-2 md:before:bg-graybg">
                 <li>
                   <button data-menu-close type="button" href="#" class="text-2xl font-bold uppercase transition-color hover:text-accent xl:text-lg md:text-2xl">Главная</button>
@@ -33,13 +34,11 @@
                 </li>
               </ul>
             </nav>
-            <div class="flex font-bold text-base gap-x-8 xl:gap-x-4 md:hidden">
-              <div><a href="tel:+79017535491" class="flex items-center gap-x-4 mb-5"><span class="w-6 shrink-0"><picture><source srcset="img/icons/phone.webp" type="image/webp"><img src="img/icons/phone.png" alt="alt" class="w-full"></picture></span><span>+79017535491</span></a><a href="mailto:info@fenixbau.ru" class="flex items-center gap-x-4"><span class="w-6 shrink-0"><picture><source srcset="img/icons/mail.webp" type="image/webp"><img src="img/icons/mail.png" alt="alt" class="w-full"></picture></span><span>info@fenixbau.ru</span></a></div>
-              <div class="flex gap-x-4 lg:hidden"><span class="w-[18px] shrink-0"><picture><source srcset="img/icons/loc.webp" type="image/webp"><img src="img/icons/loc.png" alt="alt" class="w-full"></picture></span>
-                <address class="max-w-48 not-italic">г. Москва, ул. Гольяновская, д. 3А, к. 3, пом. 1Н</address>
-              </div>
+            <div class="flex ml-auto font-bold text-base gap-x-8 xl:gap-x-4 md:hidden">
+              <div><a href="tel:+79017535491" class="flex items-center gap-x-4 mb-5"><span class="w-6 shrink-0"><picture><source srcset="img/icons/phone.webp" type="image/webp"><img src="img/icons/phone.png" alt="alt" class="w-full"></picture></span><span>+79017535491</span></a><a href="mailto:info@fenixbau.ru" class="flex items-center gap-x-4"><span class="w-6 shrink-0"><picture><source srcset="img/icons/mail.webp" type="image/webp"><img src="img/icons/mail.png" alt="alt" class="w-full"></picture></span><span>info@fenixbau.ru</span></a></div><a href="https://yandex.ru/maps/-/CDtGZ2I~" target="_blank" class="flex gap-x-4 lg:hidden"><span class="w-[18px] shrink-0"><picture><source srcset="img/icons/loc.webp" type="image/webp"><img src="img/icons/loc.png" alt="alt" class="w-full"></picture></span>
+                <address class="max-w-48 not-italic">г. Москва, ул. Гольяновская, д. 3А, к. 3, пом. 1Н</address></a>
             </div>
-            <nav class="ml-auto pl-4 flex flex-col gap-4 shrink-0 lg:ml-0 md:ml-auto md:gap-2"><a href="#" class="block w-[53px] h-[53px] md:w-[28px] md:h-[28px] bg-[url('../img/icons/whatsapp.png')] bg-no-repeat bg-contain md:bg-[url('../img/icons/whatsapp-mob.png')]"></a><a href="#" class="block w-[53px] h-[53px] md:w-[28px] md:h-[28px] bg-[url('../img/icons/tg.png')] bg-no-repeat bg-contain md:bg-[url('../img/icons/tg-mob.png')]"></a></nav>
+            <nav class="ml-11 pl-4 flex flex-col gap-4 shrink-0 md:ml-auto md:gap-2"><a href="https://wa.me/79017535491" target="_blank" class="block w-[53px] h-[53px] md:w-[28px] md:h-[28px] bg-[url('../img/icons/whatsapp.png')] bg-no-repeat bg-contain md:bg-[url('../img/icons/whatsapp-mob.png')]"></a><a href="https://t.me/tikavayayana" target="_blank" class="block w-[53px] h-[53px] md:w-[28px] md:h-[28px] bg-[url('../img/icons/tg.png')] bg-no-repeat bg-contain md:bg-[url('../img/icons/tg-mob.png')]"></a></nav>
             <button id="burger" type="button" class="ml-[13px] w-[46px] h-[46px] shrink-0 flex items-center justify-center z-10 group bg-accent rounded-full hidden md:flex md:mr-[15px]">
               <div class="w-[26px] h-[20px] relative"><span class="absolute left-0 top-0 w-full h-[3px] bg-white cursor-pointer transition ease-in-out group-[.on]:opacity-0"></span><span class="absolute left-0 top-[calc(52%-1.5px)] w-full h-[3px] bg-white cursor-pointer transition ease-in-out group-[.on]:rotate-45 -group-[.on]:translate-y-[5px]"></span><span class="absolute left-0 bottom-px w-full h-[3px] bg-white cursor-pointer transition ease-in-out group-[.on]:-rotate-45 group-[.on]:bottom-[8px]"></span></div>
             </button>
@@ -203,7 +202,8 @@
             <div class="max-w-[537px] text-center pr-[55px] lg:pr-0">
               <div class="text-[44.17px] font-bold uppercase sm:text-[21.58px]">свяжитесь с нами</div>
               <div class="relative pt-[70px] sm:pt-[30px]"><picture><source srcset="img/icons/arrow.webp" type="image/webp"><img src="img/icons/arrow.png" alt="alt" class="absolute right-[-15px] top-[-23px] sm:w-6 sm:right-[-8px] sm:top-[-9px]"></picture>
-                <button type="button" data-href="#callback-modal" data-vbtype="inline" class="callback h-[88px] px-[38px] inline-flex items-center justify-center text-[30px] font-bold text-white uppercase bg-[url('../img/btn-bg.png')] bg-no-repeat bg-contain hover:bg-[url('../img/btn-bg-hover.png')] transition-all sm:text-[15px] sm:h-[43px] sm:px-[16px]">заказать звонок</button>
+                <!-- button(type="button" data-href="#callback-modal" data-vbtype="inline" class="callback h-[88px] px-[38px] inline-flex items-center justify-center text-[30px] font-bold text-white uppercase bg-[url('../img/btn-bg.png')] bg-no-repeat bg-contain hover:bg-[url('../img/btn-bg-hover.png')] transition-all sm:text-[15px] sm:h-[43px] sm:px-[16px]") заказать звонок-->
+                <button type="button" data-micromodal-open="modal-1" class="callback h-[88px] px-[38px] inline-flex items-center justify-center text-[30px] font-bold text-white uppercase bg-[url('../img/btn-bg.png')] bg-no-repeat bg-contain hover:bg-[url('../img/btn-bg-hover.png')] transition-all sm:text-[15px] sm:h-[43px] sm:px-[16px]">заказать звонок</button>
               </div>
             </div>
           </div>
@@ -239,19 +239,25 @@
             </div>
           </div>
         </section>
-        <div id="callback-modal" class="hidden">
-          <div class="relative max-w-[1392px] mx-auto px-[66px] pt-[50px] pb-[88px] bg-white rounded-3xl xl:px-[30px] xl:py-[20px] xl:max-w-[600px]">
-            <button data-modal-close type="button" class="absolute top-6 right-12 w-[50px] h-[50px] bg-[url('../img/icons/modal-close.png')] bg-no-repeat bg-contain xl:w-[20px] xl:h-[20px] xl:top-[20px] xl:right-[30px]"></button>
-            <div class="mb-10 text-[52px] font-bold text-center xl:text-[30px] xl:mb-5 md:text-[18px] xl:px-10">Пожалуйста, заполните форму</div>
-            <form action="#">
-              <input autocomplete="off" type="text" name="" placeholder="Введите Ваше имя" class="h-[135px] block w-full mb-10 px-[50px] text-[40px] text-[#2c2c2c] rounded-[40px] border border-black bg-graybg placeholder-[#2c2c2c] focus:outline-none invalid:outline-none focus:bg-white focus:border-accent xl:h-[50px] xl:text-[18px] xl:rounded-3xl xl:mb-5 xl:px-[20px]">
-              <label class="relative block h-[135px] mb-10 xl:mb-5 xl:h-[50px]">
-                <input autocomplete="off" type="text" name="" required placeholder="" class="peer h-[135px] block w-full mb-10 px-[50px] text-[40px] text-[#2c2c2c] rounded-[40px] border border-black bg-graybg placeholder-[#2c2c2c] focus:outline-none invalid:outline-none focus:bg-white focus:border-accent xl:h-[50px] xl:text-[18px] xl:rounded-3xl xl:mb-5 xl:px-[20px]">
-                <div class="absolute flex items-center h-full w-full left-[25px] top-0 left-0 pointer-events-none text-[40px] text-[#2c2c2c] xl:text-[18px] peer-focus:hidden peer-valid:hidden">Введите номер телефона<span class="text-accent">*</span></div>
-              </label>
-              <textarea name="" placeholder="Сообщение" class="h-[360px] py-8 mb-10 block w-full px-[50px] text-[40px] text-[#2c2c2c] rounded-[40px] border border-black bg-graybg placeholder-[#2c2c2c] focus:outline-none invalid:outline-none focus:bg-white focus:border-accent xl:h-[100px] xl:text-[18px] xl:rounded-3xl xl:mb-5 xl:py-2 xl:px-[20px]"></textarea>
-              <button type="submit" class="block h-[133px] w-full bg-accent text-[52.24px] font-bold text-white text-center rounded-[40px] xl:text-[20px] xl:h-[50px] transition-colors hover:bg-[#bb2419] active:bg-[#bb2419]">Отправить</button>
-            </form>
+        <div id="modal-1" aria-hidden="true" class="modal micromodal-slide">
+          <div tabindex="-1" data-micromodal-close class="modal__overlay">
+            <div role="dialog" aria-modal="true" aria-labelledby="modal-1-title" class="modal__container">
+              <main class="modal__content">
+                <div class="relative max-w-[1392px] mx-auto px-[66px] pt-[50px] pb-[88px] bg-white rounded-3xl xl:px-[30px] xl:py-[20px] xl:max-w-[600px]">
+                  <button data-micromodal-close type="button" class="absolute top-6 right-12 w-[50px] h-[50px] bg-[url('../img/icons/modal-close.png')] bg-no-repeat bg-contain xl:w-[20px] xl:h-[20px] xl:top-[20px] xl:right-[30px]"></button>
+                  <div class="mb-10 text-[52px] font-bold text-center xl:text-[30px] xl:mb-5 md:text-[18px] xl:px-10">Пожалуйста, заполните форму</div>
+                  <form action="#" id="myForm">
+                    <input autocomplete="off" type="text" name="" placeholder="Введите Ваше имя" class="h-[135px] block w-full mb-10 px-[50px] text-[40px] text-[#2c2c2c] rounded-[40px] border border-black bg-graybg placeholder-[#2c2c2c] focus:outline-none invalid:outline-none focus:bg-white focus:border-accent xl:h-[50px] xl:text-[18px] xl:rounded-3xl xl:mb-5 xl:px-[20px]">
+                    <label class="relative block h-[135px] mb-10 xl:mb-5 xl:h-[50px]">
+                      <input autocomplete="off" type="text" name="" required placeholder="" class="peer h-[135px] block w-full mb-10 px-[50px] text-[40px] text-[#2c2c2c] rounded-[40px] border border-black bg-graybg placeholder-[#2c2c2c] focus:outline-none invalid:outline-none focus:bg-white focus:border-accent xl:h-[50px] xl:text-[18px] xl:rounded-3xl xl:mb-5 xl:px-[20px]">
+                      <div class="absolute flex items-center h-full w-full left-[25px] top-0 left-0 pointer-events-none text-[40px] text-[#2c2c2c] xl:text-[18px] peer-focus:hidden peer-valid:hidden">Введите номер телефона<span class="text-accent">*</span></div>
+                    </label>
+                    <textarea name="" placeholder="Сообщение" class="h-[360px] py-8 mb-10 block w-full px-[50px] text-[40px] text-[#2c2c2c] rounded-[40px] border border-black bg-graybg placeholder-[#2c2c2c] focus:outline-none invalid:outline-none focus:bg-white focus:border-accent xl:h-[100px] xl:text-[18px] xl:rounded-3xl xl:mb-5 xl:py-2 xl:px-[20px]"></textarea>
+                    <button type="submit" class="block h-[133px] w-full bg-accent text-[52.24px] font-bold text-white text-center rounded-[40px] xl:text-[20px] xl:h-[50px] transition-colors hover:bg-[#bb2419] active:bg-[#bb2419]">Отправить</button>
+                  </form>
+                </div>
+              </main>
+            </div>
           </div>
         </div>
         <div class="flex flex-col">
@@ -261,13 +267,21 @@
                 <div class="hidden sm:block py-2.5 md:px-[30px]">
                   <div class="text-[33px] leading-[33px] text-accent font-bold sm:text-[15px] sm:leading-[17.18px]">Адрес организации в России:</div>
                   <address class="basis-1/2 shrink-0 grow-0 font-bold text-[33px] leading-[33px]  not-italic sm:text-[15px] sm:leading-[17.18px]">105094, Россия, г. Москва,<br>ул. Гольяновская, д. 3А, к. 3, пом. 1Н</address>
-                </div><a href="#" class="block aspect-[966/850] md:aspect-[360/348]"><picture><source srcset="img/maps/moscow.webp" type="image/webp"><img src="img/maps/moscow.jpg" alt="alt" class="object-cover w-full h-full"></picture></a>
+                </div>
+                <div class="relative aspect-[966/850] md:aspect-[360/348]">
+                  <div style="position:absolute;overflow:hidden;" class="w-full h-full"><a href="https://yandex.ru/maps/213/moscow/?utm_medium=mapframe&amp;utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">&Mcy;&ocy;&scy;&kcy;&vcy;&acy;</a><a href="https://yandex.ru/maps/213/moscow/?ll=37.707332%2C55.776760&amp;mode=whatshere&amp;utm_campaign=desktop&amp;utm_medium=mapframe&amp;utm_source=maps&amp;whatshere%5Bpoint%5D=37.707458%2C55.777083&amp;whatshere%5Bzoom%5D=16.45&amp;z=16.45" style="color:#eee;font-size:12px;position:absolute;top:14px;">1139-&jcy; &kcy;&vcy;&acy;&rcy;&tcy;&acy;&lcy; &mdash; &YAcy;&ncy;&dcy;&iecy;&kcy;&scy;&nbsp;&Kcy;&acy;&rcy;&tcy;&ycy;</a>
+                    <iframe src="https://yandex.ru/map-widget/v1/?ll=37.707332%2C55.776760&amp;mode=whatshere&amp;utm_campaign=desktop&amp;utm_medium=search&amp;utm_source=maps&amp;whatshere%5Bpoint%5D=37.707458%2C55.777083&amp;whatshere%5Bzoom%5D=16.45&amp;z=16.45" allowfullscreen="true" style="position:absolute;width:100%;height:100%"></iframe>
+                  </div>
+                </div>
               </div>
               <div class="basis-1/2 shrink-0 grow-0">
                 <div class="hidden md:block py-2.5 md:px-[30px]">
                   <div class="text-[33px] leading-[33px] text-accent font-bold sm:text-[15px] sm:leading-[17.18px]">Адрес организации в Германии:</div>
                   <address class="basis-1/2 shrink-0 grow-0 font-bold text-[33px] leading-[33px]  not-italic sm:text-[15px] sm:leading-[17.18px]">14193, Берлин, Furtwänglerstraße 8</address>
-                </div><a href="#" class="block aspect-[966/850] md:aspect-[360/348]"><picture><source srcset="img/maps/berlin.webp" type="image/webp"><img src="img/maps/berlin.jpg" alt="alt" class="object-cover w-full h-full"></picture></a>
+                </div>
+                <div class="block aspect-[966/850] md:aspect-[360/348]">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2429.71193015072!2d13.273060475578946!3d52.48435133886969!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a850b1a6450379%3A0xd30689a3665cf7b5!2zRnVydHfDpG5nbGVyc3RyYcOfZSA4LCAxNDE5MyBCZXJsaW4sINCT0LXRgNC80LDQvdC40Y8!5e0!3m2!1sru!2sru!4v1731331195289!5m2!1sru!2sru" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="w-full h-full"></iframe>
+                </div>
               </div>
             </div>
             <div class="mx-auto max-w-cont flex px-[30px] py-8 md:hidden">
@@ -310,13 +324,12 @@
         </div>
         <div class="bg-[#dddddc]">
           <div class="mx-auto max-w-cont px-[30px] py-10 xs:pt-2 xs:pb-5">
-            <div class="mb-6 text-[27px] font-medium xs:text-[12px] xs:leading-[15px] xs:text-center xs:mb-4 xs:hidden">&copy; 
-              <spam class="uppercase">ООО «ФЕНИСК БАУ». Все права защищены правобладателем.</spam>
-            </div>
-            <div class="hidden text-[27px] font-medium xs:text-[12px] xs:leading-[15px] xs:text-center xs:block">&copy; 
+            <div class="text-[27px] font-medium xs:text-[12px] xs:leading-[15px] xs:text-center">&copy; 
               <spam class="uppercase">ООО «ФЕНИСК БАУ». ИНН 9701295937 / 2024 г.</spam>
             </div>
-            <p class="max-w-[810px] text-[20px] leading-[20px] font-medium xs:text-[10px] xs:leading-[12.5px] xs:text-center xs:hidden">Вся информация, включая фото, видео, графические изображения, тексты, ссылки и иное является собственностью ООО «ФЕНИСК БАУ». Любые копирования контента без указания на правообладателя не допускаются.   </p>
+            
+            
+            
           </div>
         </div>
       </footer>
@@ -325,6 +338,7 @@
     
     
     
+    <script src="js/libs/micromodal/micromodal.js"></script>
     <script src="js/main.min.js"></script>
   </body>
 </html>

@@ -296,6 +296,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		var serviceGallery = new VenoBox({
 			selector: '.serveces-modal',
 			spinner: 'rotating-plane',
+			fitView: true,
 			// maxWidth: '44.53%',
 			onPreOpen: function(obj){
 				document.querySelector('#wrapper-for-scroll-fix').classList.add('modal-open');
@@ -309,32 +310,33 @@ document.addEventListener('DOMContentLoaded', () => {
 		});
 	}
 
-	if(document.querySelector('.callback') !== null){
-		var callbackBox = new VenoBox({
-			selector: '.callback',
-			customClass: 'callback-form',
-			bgcolor: 'transparent',
-			onPreOpen: function(obj){
-				document.querySelector('#wrapper-for-scroll-fix').classList.add('modal-open');
-				// console.log(obj)
-			},
-			onPostOpen: function(obj, gallIndex, thenext, theprev){
-				document.querySelector('.callback-form').querySelector('[data-modal-close]').addEventListener('click', callbackModalClose);
-		    },
-			onPreClose: function(obj, gallIndex, thenext, theprev){
-				document.querySelector('#wrapper-for-scroll-fix').classList.remove('modal-open');
-				document.querySelector('.callback-form').querySelector('[data-modal-close]').removeEventListener('click', callbackModalClose);
-			}
-		});
+	// if(document.querySelector('.callback') !== null){
+	// 	var callbackBox = new VenoBox({
+	// 		selector: '.callback',
+	// 		customClass: 'callback-form',
+	// 		bgcolor: 'transparent',
+	// 		onPreOpen: function(obj){
+	// 			document.querySelector('#wrapper-for-scroll-fix').classList.add('modal-open');
+	// 			// console.log(obj)
+	// 		},
+	// 		onPostOpen: function(obj, gallIndex, thenext, theprev){
+	// 			document.querySelector('.callback-form').querySelector('[data-modal-close]').addEventListener('click', callbackModalClose);
+	// 	    },
+	// 		onPreClose: function(obj, gallIndex, thenext, theprev){
+	// 			document.querySelector('#wrapper-for-scroll-fix').classList.remove('modal-open');
+	// 			document.querySelector('.callback-form').querySelector('[data-modal-close]').removeEventListener('click', callbackModalClose);
+	// 		}
+	// 	});
 		
-		function callbackModalClose(e) {
-			callbackBox.close();
-		}
-	}
+	// 	function callbackModalClose(e) {
+	// 		callbackBox.close();
+	// 	}
+	// }
 
 	if(document.querySelector('.overal-modal') !== null){
 		var overallBox = new VenoBox({
 			selector: '.overal-modal',
+			fitView: true,
 			onPreOpen: function(obj){
 				document.querySelector('#wrapper-for-scroll-fix').classList.add('modal-open');
 			},
@@ -344,6 +346,54 @@ document.addEventListener('DOMContentLoaded', () => {
 		});
 	}
 	// End VenoBox modal
+
+
+	console.log(document.getElementById('myForm'))
+	document.getElementById('myForm').onsubmit = async function(e) {
+		console.log('submit')
+		 e.preventDefault();
+		 const formData = new FormData(this);
+		 const data = Object.fromEntries(formData.entries());
+		 
+		 await fetch('YOUR_WEB_APP_URL', {
+			 method: 'POST',
+			 body: JSON.stringify(data),
+			 headers: { 'Content-Type': 'application/json' }
+		 });
+		 
+		 alert("Form submitted successfully!");
+	 };
+
+	// micromodal
+	// if(document.querySelector('.modal') !== null){
+		MicroModal.init({
+			openTrigger: 'data-micromodal-open', 
+			closeTrigger: 'data-micromodal-close',
+			openClass: 'is-open', 
+			disableFocus: true, 
+			awaitOpenAnimation: true,
+			awaitCloseAnimation: true,
+			disableScroll: true,
+			onShow: function(modal, trigger, event){
+
+				// console.log(trigger)
+				// console.log(event)
+				// console.log(modal)	
+				
+				// при disableScroll: true для компенсации ширины скроллбара (фикс "прыгания" страницы влево)
+				document.querySelector('#wrapper-for-scroll-fix').classList.add('modal-open');
+
+			},
+			onClose: function(modal) {
+				// console.info(`${modal.id} is hidden`);
+				
+				// при disableScroll: true для компенсации ширины скроллбара (фикс "прыгания" страницы влево)
+				document.querySelector('#wrapper-for-scroll-fix').classList.remove('modal-open');
+
+			}
+		});		
+	// }
+	// END micromodal
 
 	// click on services link
 		[...document.querySelectorAll('[data-menu-close]')].forEach(item => {
@@ -373,5 +423,6 @@ document.addEventListener('DOMContentLoaded', () => {
 		});
 		setTimeout(() => overallBox.open(document.querySelector('.overal-modal')), 1000);
 	}
+		
 
 }); //DOMContentLoaded
