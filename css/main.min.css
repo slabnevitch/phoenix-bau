@@ -1902,6 +1902,9 @@ body {
 .top-\[calc\(46\%-1\.5px\)\] {
   top: calc(46% - 1.5px);
 }
+.top-\[calc\(46\%_-_1px\)\] {
+  top: calc(46% - 1px);
+}
 .z-10 {
   z-index: 10;
 }
@@ -3436,6 +3439,9 @@ body {
   }
   .sm\:leading-\[17\.18px\] {
     line-height: 17.18px;
+  }
+  .sm\:\[line-height\:_0\.73\] {
+    line-height: 0.73;
   }
   .sm\:after\:bottom-0::after {
     content: var(--tw-content);
