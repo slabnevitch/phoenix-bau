@@ -3357,17 +3357,14 @@ body {
   .sm\:aspect-auto {
     aspect-ratio: auto;
   }
+  .sm\:h-\[148px\] {
+    height: 148px;
+  }
   .sm\:h-\[242px\] {
     height: 242px;
   }
   .sm\:h-\[43px\] {
     height: 43px;
-  }
-  .sm\:h-\[100px\] {
-    height: 100px;
-  }
-  .sm\:h-\[148px\] {
-    height: 148px;
   }
   .sm\:w-6 {
     width: 1.5rem;
