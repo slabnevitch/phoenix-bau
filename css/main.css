@@ -2901,9 +2901,9 @@ body {
   opacity: 0;
 }
 
-.group.isMobile-iOS .group-\[\.isMobile-iOS\]\:after\:bottom-\[5px\]::after {
+.group.isMobile-iOS .group-\[\.isMobile-iOS\]\:after\:bottom-\[3px\]::after {
   content: var(--tw-content);
-  bottom: 5px;
+  bottom: 3px;
 }
 
 .peer:valid ~ .peer-valid\:hidden {
