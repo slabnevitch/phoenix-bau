@@ -2904,11 +2904,6 @@ body {
   opacity: 0;
 }
 
-.group.isMobile-iOS .group-\[\.isMobile-iOS\]\:after\:bottom-\[5px\]::after {
-  content: var(--tw-content);
-  bottom: 5px;
-}
-
 .group.isMobile-iOS .group-\[\.isMobile-iOS\]\:after\:bottom-\[3px\]::after {
   content: var(--tw-content);
   bottom: 3px;
@@ -3328,6 +3323,12 @@ body {
   .sm\:top-\[-9px\] {
     top: -9px;
   }
+  .sm\:bottom-0 {
+    bottom: 0px;
+  }
+  .sm\:right-0 {
+    right: 0px;
+  }
   .sm\:-order-1 {
     order: -1;
   }
@@ -3439,6 +3440,10 @@ body {
   .sm\:after\:bottom-\[-7px\]::after {
     content: var(--tw-content);
     bottom: -7px;
+  }
+  .sm\:after\:bottom-0::after {
+    content: var(--tw-content);
+    bottom: 0px;
   }
   .sm\:after\:bg-\[\#B3B3B3\]::after {
     content: var(--tw-content);
