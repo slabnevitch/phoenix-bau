@@ -211,7 +211,7 @@ import ScrollTrigger from '~/app/libs-vanilla/scrollTrigger/ScrollTrigger.js';
 // console.log(magnificPopup)
 
 document.addEventListener('DOMContentLoaded', () => {
-	if(isMobile.iOS || navigator.userAgent.match(/SAMSUNG|SGH-[I|N|T]|GT-[I|P|N]|SM-[N|P|T|Z|G]|SHV-E|SCH-[I|J|R|S]|SPH-L/i)){
+	if(isMobile.iOS() || navigator.userAgent.match(/SAMSUNG|SGH-[I|N|T]|GT-[I|P|N]|SM-[N|P|T|Z|G]|SHV-E|SCH-[I|J|R|S]|SPH-L/i)){
 		document.documentElement.classList.add('isMobile-iOS');
 	}
 	// mob. menu close/open
