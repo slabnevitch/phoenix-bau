@@ -215,6 +215,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	// 	document.documentElement.classList.add('isMobile-iOS');
 	// }
 	// mob. menu close/open
+	alert(window.getComputedStyle(document.querySelector('.we-box h2'))[ 'lineHeight' ]);
 	if(document.getElementById('burger') !== null){
 		const burger = document.getElementById('burger');
 
