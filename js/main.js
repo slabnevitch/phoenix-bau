@@ -63,7 +63,7 @@
 // require('~/app/libs-vanilla/multilevel-panel/multilevel-panel.js')
 
 //- isMobile--------------------------
-// import {isMobile} from '~/app/libs-vanilla/service-functions/all-functions.js';
+import {isMobile} from '~/app/libs-vanilla/service-functions/all-functions.js';
 
 //- scrollDisable(надежное отключение скролла на ios--------------------------
 // import scrollDisabler from '~/app/libs-vanilla/service-functions/scrollDisable.js'
@@ -211,6 +211,9 @@ import ScrollTrigger from '~/app/libs-vanilla/scrollTrigger/ScrollTrigger.js';
 // console.log(magnificPopup)
 
 document.addEventListener('DOMContentLoaded', () => {
+	if(isMobile.iOS){
+		document.documentElement.classList.add('isMobile-iOS');
+	}
 	// mob. menu close/open
 	if(document.getElementById('burger') !== null){
 		const burger = document.getElementById('burger');

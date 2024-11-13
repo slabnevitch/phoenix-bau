@@ -2904,6 +2904,11 @@ body {
   opacity: 0;
 }
 
+.group.isMobile-iOS .group-\[\.isMobile-iOS\]\:after\:bottom-0::after {
+  content: var(--tw-content);
+  bottom: 0px;
+}
+
 .peer:valid ~ .peer-valid\:hidden {
   display: none;
 }
@@ -3245,9 +3250,6 @@ body {
   .md\:pt-\[100px\] {
     padding-top: 100px;
   }
-  .md\:font-medium {
-    font-family: "CeraPro-Medium", sans-serif;
-  }
   .md\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
@@ -3263,9 +3265,6 @@ body {
   }
   .md\:text-\[18px\] {
     font-size: 18px;
-  }
-  .md\:font-medium {
-    font-weight: 500;
   }
   .md\:leading-\[15px\] {
     line-height: 15px;
@@ -3535,9 +3534,6 @@ body {
   .xs\:text-center {
     text-align: center;
   }
-  .xs\:font-medium {
-    font-family: "CeraPro-Medium", sans-serif;
-  }
   .xs\:text-\[12px\] {
     font-size: 12px;
   }
@@ -3553,9 +3549,6 @@ body {
   .xs\:text-xs {
     font-size: 0.75rem;
     line-height: 1rem;
-  }
-  .xs\:font-medium {
-    font-weight: 500;
   }
   .xs\:leading-\[12px\] {
     line-height: 12px;
@@ -3587,6 +3580,9 @@ body {
   }
   .xss\:text-\[30px\] {
     font-size: 30px;
+  }
+  .xss\:text-\[13px\] {
+    font-size: 13px;
   }
 }
 
