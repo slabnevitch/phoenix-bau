@@ -1869,9 +1869,6 @@ body {
 .relative {
   position: relative;
 }
-.-left-\[30px\] {
-  left: -30px;
-}
 .bottom-px {
   bottom: 1px;
 }
@@ -1901,6 +1898,9 @@ body {
 }
 .top-\[calc\(46\%_-_1px\)\] {
   top: calc(46% - 1px);
+}
+.-left-\[30px\] {
+  left: -30px;
 }
 .z-10 {
   z-index: 10;
@@ -3312,11 +3312,11 @@ body {
 }
 
 @media (max-width: 767.98px) {
+  .sm\:absolute {
+    position: absolute;
+  }
   .sm\:bottom-0 {
     bottom: 0px;
-  }
-  .sm\:left-\[-10px\] {
-    left: -10px;
   }
   .sm\:right-0 {
     right: 0px;
@@ -3326,6 +3326,9 @@ body {
   }
   .sm\:top-\[-9px\] {
     top: -9px;
+  }
+  .sm\:left-\[-10px\] {
+    left: -10px;
   }
   .sm\:-order-1 {
     order: -1;

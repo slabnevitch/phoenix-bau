@@ -1866,6 +1866,9 @@ body {
 .relative {
   position: relative;
 }
+.-left-\[30px\] {
+  left: -30px;
+}
 .bottom-px {
   bottom: 1px;
 }
@@ -2526,6 +2529,9 @@ body {
 }
 .font-medium {
   font-weight: 500;
+}
+.font-normal {
+  font-weight: 400;
 }
 .uppercase {
   text-transform: uppercase;
@@ -3303,8 +3309,14 @@ body {
 }
 
 @media (max-width: 767.98px) {
+  .sm\:absolute {
+    position: absolute;
+  }
   .sm\:bottom-0 {
     bottom: 0px;
+  }
+  .sm\:left-\[-10px\] {
+    left: -10px;
   }
   .sm\:right-0 {
     right: 0px;
@@ -3326,6 +3338,12 @@ body {
   }
   .sm\:mb-\[7px\] {
     margin-bottom: 7px;
+  }
+  .sm\:line-clamp-1 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
   }
   .sm\:block {
     display: block;
