@@ -3314,20 +3314,20 @@ body {
 }
 
 @media (max-width: 767.98px) {
+  .sm\:bottom-0 {
+    bottom: 0px;
+  }
   .sm\:left-\[-10px\] {
     left: -10px;
+  }
+  .sm\:right-0 {
+    right: 0px;
   }
   .sm\:right-\[-8px\] {
     right: -8px;
   }
   .sm\:top-\[-9px\] {
     top: -9px;
-  }
-  .sm\:bottom-0 {
-    bottom: 0px;
-  }
-  .sm\:right-0 {
-    right: 0px;
   }
   .sm\:-order-1 {
     order: -1;
@@ -3437,13 +3437,13 @@ body {
   .sm\:leading-\[17\.18px\] {
     line-height: 17.18px;
   }
-  .sm\:after\:bottom-\[-7px\]::after {
-    content: var(--tw-content);
-    bottom: -7px;
-  }
   .sm\:after\:bottom-0::after {
     content: var(--tw-content);
     bottom: 0px;
+  }
+  .sm\:after\:bottom-\[-7px\]::after {
+    content: var(--tw-content);
+    bottom: -7px;
   }
   .sm\:after\:bg-\[\#B3B3B3\]::after {
     content: var(--tw-content);

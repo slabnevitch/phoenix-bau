@@ -211,9 +211,9 @@ import ScrollTrigger from '~/app/libs-vanilla/scrollTrigger/ScrollTrigger.js';
 // console.log(magnificPopup)
 
 document.addEventListener('DOMContentLoaded', () => {
-	if(isMobile.iOS){
-		document.documentElement.classList.add('isMobile-iOS');
-	}
+	// if(isMobile.iOS){
+	// 	document.documentElement.classList.add('isMobile-iOS');
+	// }
 	// mob. menu close/open
 	if(document.getElementById('burger') !== null){
 		const burger = document.getElementById('burger');
