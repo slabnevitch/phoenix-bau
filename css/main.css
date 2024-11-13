@@ -2901,9 +2901,9 @@ body {
   opacity: 0;
 }
 
-.group.isMobile-iOS .group-\[\.isMobile-iOS\]\:after\:bottom-0::after {
+.group.isMobile-iOS .group-\[\.isMobile-iOS\]\:after\:bottom-\[5px\]::after {
   content: var(--tw-content);
-  bottom: 0px;
+  bottom: 5px;
 }
 
 .peer:valid ~ .peer-valid\:hidden {
@@ -3572,8 +3572,8 @@ body {
   .xss\:text-\[10px\] {
     font-size: 10px;
   }
-  .xss\:text-\[13px\] {
-    font-size: 13px;
+  .xss\:text-\[11px\] {
+    font-size: 11px;
   }
   .xss\:text-\[30px\] {
     font-size: 30px;
