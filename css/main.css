@@ -3306,6 +3306,9 @@ body {
 }
 
 @media (max-width: 767.98px) {
+  .sm\:absolute {
+    position: absolute;
+  }
   .sm\:bottom-0 {
     bottom: 0px;
   }
@@ -3333,6 +3336,12 @@ body {
   .sm\:mb-\[7px\] {
     margin-bottom: 7px;
   }
+  .sm\:line-clamp-1 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+  }
   .sm\:block {
     display: block;
   }
@@ -3344,6 +3353,9 @@ body {
   }
   .sm\:aspect-auto {
     aspect-ratio: auto;
+  }
+  .sm\:h-\[148px\] {
+    height: 148px;
   }
   .sm\:h-\[242px\] {
     height: 242px;
