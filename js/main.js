@@ -243,6 +243,7 @@ document.addEventListener('DOMContentLoaded', () => {
 				autoplay: true,
 				controls: false, // отключение кнопок "вперед/назад"
 				nav: false, //отключение bullets
+				speed: 2000,
 				autoplayButtonOutput: false // убрать кнопку Stop из html
 			});
 	}
