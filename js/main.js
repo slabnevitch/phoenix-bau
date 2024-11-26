@@ -305,6 +305,7 @@ document.addEventListener('DOMContentLoaded', () => {
 			selector: '.serveces-modal',
 			spinner: 'rotating-plane',
 			fitView: true,
+			infinigall: true,
 			// maxWidth: '44.53%',
 			onPreOpen: function(obj){
 				document.querySelector('#wrapper-for-scroll-fix').classList.add('modal-open');
@@ -345,6 +346,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		var overallBox = new VenoBox({
 			selector: '.overal-modal',
 			fitView: true,
+			infinigall: true,
 			onPreOpen: function(obj){
 				document.querySelector('#wrapper-for-scroll-fix').classList.add('modal-open');
 			},
